@@ -37,7 +37,7 @@ mermaid: true
 
 ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/3136.png)
 
- ## 3D shape classification
+## 3D shape classification
 
 ![](pic/3341.png)
 
