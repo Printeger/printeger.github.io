@@ -75,7 +75,7 @@ mobile net 123
 - modelnet40 1024points * 20
 
 ![](pic/4/1.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/1.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/1.png)
 
 - inno 10000 points * 30
 
@@ -83,12 +83,12 @@ mobile net 123
 - inno 5000 points * 30
 
 ![](pic/4/2.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/2.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/2.png)
 
 - inno 1024 points * 30
 
 ![](pic/4/3.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/3.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/3.png)
 
 
 > 训练集中模型形状完整，无truck分类，制作训练集
@@ -98,19 +98,19 @@ mobile net 123
     epoch:350, batch size: 16, test batch size: 8
 
 ![](pic/4/4.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/4.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/4.png)
 
 ![](pic/4/5.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/5.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/5.png)
 
 ![](pic/4/6.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/6.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/6.png)
 
 ![](pic/4/7.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/7.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/7.png)
 
 ![](pic/4/8.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/8.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/8.png)
 
 
 
@@ -125,7 +125,7 @@ mobile net 123
     GPU: tnum_points: 1024, test_batch_size: 16, 
 
 ![](pic/4/9.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/9.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/9.png)
 
 
 time cost per pcd(1024 points): 0.007853929 s 
@@ -133,7 +133,7 @@ time cost per pcd(1024 points): 0.007853929 s
     CPU: tnum_points: 1024, test_batch_size: 16, 
 
 ![](pic/4/10.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/10.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/10.png)
 
 time cost per pcd(1024 points): 0.007833333 s
 
@@ -171,17 +171,17 @@ https://pytorch.org/tutorials/advanced/torch_script_custom_ops.html
 > GPU: 
  
 ![](pic/4/11.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/11.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/11.png)
 
 > CPU:
 
 ![](pic/4/12.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/12.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/12.png)
 
 ### pytorch -> onnx: 
 
 ![](pic/4/13.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/13.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/13.png)
 
 
 
@@ -198,7 +198,7 @@ python -m onnxsim test.onnx gdcnn_simplif.onnx
 ```
 
 ![](pic/4/14.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/14.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/14.png)
 
 onnx-simplifier  无法完全去除
 ```python
@@ -264,7 +264,7 @@ pointnet无topk，重新训练
 > 导出成功~
 
 ![](pic/4/15.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/15.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/15.png)
 
 ### ncnn model
 
@@ -273,18 +273,18 @@ pointnet无topk，重新训练
 > Result: 1 PCD 1024 points 
 
 ![](pic/4/16.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/16.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/16.png)
 
 > RESULT: 1061 PCD 1024 points car
     pointnet-opt-fp16
 
 ![](pic/4/17.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/17.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/17.png)
 
     pointnet_train_2-opt-fp16
 
 ![](pic/4/18.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/18.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/18.png)
 
 > RESULT: 144 PCD 1024 points bike
 
@@ -293,7 +293,7 @@ pointnet无topk，重新训练
     30ms / pcd
 
 ![](pic/4/19.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/19.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/19.png)
 
 > Q1：KNN, 模型无法转化为onnx
 
@@ -303,7 +303,7 @@ pointnet无topk，重新训练
 ## squeezent
 
 ![](pic/4/21.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/21.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/21.png)
 
     ncnn model & onnx simplifed & innx origin
 
@@ -329,7 +329,7 @@ https://github.com/isl-org/Open3D/issues/1912
 open3d 批量导出侧视图：
 
 ![](pic/4/20.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/20.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/4/20.png)
 > 如何自动关闭窗口？DONE
 
 

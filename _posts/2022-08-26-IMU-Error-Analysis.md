@@ -67,7 +67,7 @@ Allan方差分析时,不包含对零偏重复性的分析。
 根据曲线斜率识别出各项误差,并计算出对应的误差强度。
 
 ![](pic/7/1.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/7/1.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/7/1.png)
 
 求曲线与T=1的交点，求得Q、N、K、B、R。
 
@@ -91,32 +91,32 @@ Allan方差分析时,不包含对零偏重复性的分析。
 陀螺仪或加速度计输出中的常值偏移,即常说的 bias。
 
 ![](pic/7/2.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/7/2.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/7/2.png)
 
 ![](pic/7/3.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/7/3.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/7/3.png)
 
 ## 2）刻度系数误差：
 器件的输出往往为脉冲值或模数转换得到的值,需要乘以一个刻度系数才能转换成角速度或加速度值,若该系数不准,便存在刻度系数误差。
 
 ![](pic/7/4.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/7/4.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/7/4.png)
 
 ## 3）安装误差：
 如图所示,b坐标系是正交的imu坐标系,g坐标系的三个轴是分别对应三个陀螺仪。由于加工工艺原因,陀螺仪的三个轴并不正交,而且和b坐标系的轴不重合,二者之间的偏差即为安装误差。
 
 ![](pic/7/5.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/7/5.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/7/5.png)
 
 陀螺仪的输出:
 
 ![](pic/7/6.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/7/6.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/7/6.png)
 
 加速度计的输出：
 
 ![](pic/7/7.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/7/7.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/7/7.png)
 
 # 4. 内参标定
 
@@ -133,9 +133,9 @@ https://github.com/Kyle-ak/imu_tk
 # 5. 温度补偿
 
 ![](pic/7/8.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/7/8.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/7/8.png)
 
 B：IMU bias, T：温度，delt_T：变温率，f：未知模型。通常：
 
 ![](pic/7/9.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/7/9.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/7/9.png)

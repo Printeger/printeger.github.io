@@ -18,20 +18,20 @@ mermaid: true
 # 1. Overall Structure
 
 ![](pic/5/1.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/1.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/5/1.png)
 
 # 2. Hand-Eye Caliration Method
 
 ![](pic/5/5.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/5.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/5/5.png)
 
-> Mainly based on hand-eye calibration method
+> masterly based on hand-eye calibration method
 
 ![](pic/5/2.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/2.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/5/2.png)
 
 ![](pic/5/3.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/3.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/5/3.png)
 
 > The extrinsic matrix is from IMU axis to Lidar axis.
 >
@@ -65,15 +65,15 @@ In this program, we use K. Daniilidis's Dual Quaternions method to solve AX=XB p
 - dual number: 
 
 ![](pic/5/6.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/6.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/5/6.png)
 
 - dual quaternion:
 
 ![](pic/5/7.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/7.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/5/7.png)
 
 ![](pic/5/8.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/8.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/5/8.png)
 
     point b to point a :
 
@@ -86,44 +86,44 @@ In this program, we use K. Daniilidis's Dual Quaternions method to solve AX=XB p
 Hand-Eye Transformation with Unit Dual Quaternions:
 
 ![](pic/5/9.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/9.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/5/9.png)
 
     ǎ denote the screw of a camera motion, and b̌  denote the screw of the hand motion.
 
 ![](pic/5/10.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/10.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/5/10.png)
 
 Multiplying on the right with q.
 
 ![](pic/5/11.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/11.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/5/11.png)
 
 Let a = (0, a) and a' = (0, a'), as well as b = (0, b), b' = (0, b').
 
 ![](pic/5/12.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/12.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/5/12.png)
 
 SVD: 
 
 ![](pic/5/13.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/13.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/5/13.png)
 
 results:
 
 ![](pic/5/14.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/14.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/5/14.png)
 
     v7, v8 is the last two right-singular vectors
 
 - compare to two-steps method(Tsai method) and nonlinear method:
 
 ![](pic/5/15.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/15.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/5/15.png)
 
        Behavior of the dual quaternion (DUAL), the nonlinear (NLIN), and the two-step (SEPA) algorithms with variation in noise. The RMS rotation error is shown on the left; the RMS relative translation error is on the right.
 
 ![](pic/5/16.png)
-![](https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/16.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/5/16.png)
 
     The RMS error in rotation (left) and the RMS relative error in translation (right) as a function of the number of hand and camera motions.
 
