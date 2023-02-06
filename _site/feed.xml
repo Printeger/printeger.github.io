@@ -1,1618 +1,242 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://0.0.0.0:8080/printeger.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/printeger.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-02-06T08:17:50+00:00</updated><id>http://0.0.0.0:8080/printeger.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-</subtitle><entry><title type="html">The Dictionary</title><link href="http://0.0.0.0:8080/printeger.github.io/blog/2022/The-Dictionary/" rel="alternate" type="text/html" title="The Dictionary" /><published>2022-12-06T04:00:00+00:00</published><updated>2022-12-06T04:00:00+00:00</updated><id>http://0.0.0.0:8080/printeger.github.io/blog/2022/The-Dictionary</id><content type="html" xml:base="http://0.0.0.0:8080/printeger.github.io/blog/2022/The-Dictionary/"><![CDATA[]]></content><author><name>printeger</name></author><category term="Lookup" /><category term="Dict" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">The Manual</title><link href="http://0.0.0.0:8080/printeger.github.io/blog/2022/The-Manual/" rel="alternate" type="text/html" title="The Manual" /><published>2022-12-06T04:00:00+00:00</published><updated>2022-12-06T04:00:00+00:00</updated><id>http://0.0.0.0:8080/printeger.github.io/blog/2022/The-Manual</id><content type="html" xml:base="http://0.0.0.0:8080/printeger.github.io/blog/2022/The-Manual/"><![CDATA[<ul>
-  <li><a href="#a">A</a>
-    <ul>
-      <li><a href="#apollo">APOLLO</a>
-        <ul>
-          <li><a href="#play-record">play .record</a></li>
-          <li><a href="#channle-监控">channle 监控</a></li>
-          <li><a href="#sdkrepo-download">sdk/repo download</a></li>
-          <li><a href="#启动数据集">启动数据集</a></li>
-          <li><a href="#点云录制">点云录制</a></li>
-          <li><a href="#orders">orders</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><a href="#b">B</a></li>
-  <li><a href="#c">C</a>
-    <ul>
-      <li><a href="#cuda">CUDA</a>
-        <ul>
-          <li><a href="#pytorch-对应-cuda版本">pytorch 对应 cuda版本</a></li>
-          <li><a href="#cuda-1">CUDA</a></li>
-          <li><a href="#cudnn-tar--install">cudnn .tar  install</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><a href="#d">D</a>
-    <ul>
-      <li><a href="#docker">Docker</a>
-        <ul>
-          <li><a href="#docker-可视化">docker 可视化</a></li>
-          <li><a href="#cannot-access-gpu-from-within-container-please-install-latest-docker-and-nvidia-container-toolkit-as-described-by">Cannot access GPU from within container. Please install latest Docker and NVIDIA Container Toolkit as described by:</a></li>
-          <li><a href="#报错failed-to-connect-is-docker-running">报错Failed to connect. Is Docker running</a></li>
-          <li><a href="#docker--container-查看启动进入">docker  container 查看/启动/进入</a></li>
-          <li><a href="#docker-group">docker group</a></li>
-          <li><a href="#docker-images--container">docker images / container</a></li>
-          <li><a href="#docker-拷贝本地文件到容器容器到本地文件">docker 拷贝本地文件到容器/容器到本地文件</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><a href="#e">E</a>
-    <ul>
-      <li><a href="#error">ERROR</a></li>
-      <li><a href="#evo">EVO</a></li>
-    </ul>
-  </li>
-  <li><a href="#f">F</a></li>
-  <li><a href="#g">G</a>
-    <ul>
-      <li><a href="#gdb">GDB</a></li>
-      <li><a href="#git">GIT</a>
-        <ul>
-          <li><a href="#从bitbucket下载">从bitbucket下载：</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><a href="#h">H</a></li>
-  <li><a href="#i">I</a>
-    <ul>
-      <li><a href="#innovusion">INNOVUSION</a>
-        <ul>
-          <li><a href="#falcon-ros">falcon-ros:</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><a href="#j">J</a></li>
-  <li><a href="#k">K</a></li>
-  <li><a href="#l">L</a></li>
-  <li><a href="#m">M</a></li>
-  <li><a href="#n">N</a></li>
-  <li><a href="#o">O</a></li>
-  <li><a href="#p">P</a>
-    <ul>
-      <li><a href="#python">python</a></li>
-    </ul>
-  </li>
-  <li><a href="#q">Q</a></li>
-  <li><a href="#r">R</a>
-    <ul>
-      <li><a href="#ros">ROS</a>
-        <ul>
-          <li><a href="#fixed-frame-trans">fixed frame trans</a></li>
-          <li><a href="#rosbag-to-pcdtxt">Rosbag to pcd/txt:</a></li>
-          <li><a href="#查看frame_id">查看frame_id</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><a href="#s">S</a></li>
-  <li><a href="#t">T</a>
-    <ul>
-      <li><a href="#torch">torch</a></li>
-    </ul>
-  </li>
-  <li><a href="#u">U</a></li>
-  <li><a href="#v">V</a></li>
-  <li><a href="#w">W</a></li>
-  <li><a href="#x">X</a></li>
-  <li><a href="#y">Y</a></li>
-  <li><a href="#z">Z</a></li>
-</ul>
 
-<h1 id="a">A</h1>
-<h2 id="apollo">APOLLO</h2>
-<h3 id="play-record">play .record</h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cyber_recorder play -f sensor_rgb.record -loop 
-cyber_visualizer  ### channle 监控
-cyber_monitor -c ChannelName
-</code></pre></div></div>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>Chirpy</title>
+  <subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle>
+  <updated>2023-02-06T16:59:52+08:00</updated>
+  <author>
+    <name>your_full_name</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
+  <rights> © 2023 your_full_name </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
-<h3 id="sdkrepo-download">sdk/repo download</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd omnisense &amp;&amp; ./tools/build.bash init all
-</code></pre></div></div>
 
-<h3 id="启动数据集">启动数据集</h3>
+  
+  <entry>
+    <title>Enable Google Page Views</title>
+    <link href="http://localhost:4000/posts/enable-google-pv/" rel="alternate" type="text/html" title="Enable Google Page Views" />
+    <published>2021-01-04T07:32:00+08:00</published>
+  
+    <updated>2021-01-04T07:32:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/enable-google-pv/</id>
+    <content src="http://localhost:4000/posts/enable-google-pv/" />
+    <author>
+      <name>sille_bille</name>
+    </author>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	source /apollo/cyber/setup.bash 
-	1 改launch/conf/driver_01_debug.pb.txt    --------------------data route
-	2 改launch/dag/driver_single_debug.dag   -------------------config_file_path
-	3 改launch/intergration_single_lidar_debug.launch  ------------master    .dag_path
-	4 cyber_launch start modules/omnisense/launch/integration_single_lidar_debug.launch
-	5 http://viewer.innovusion.info/v60/?url=127.0.0.1&amp;port=8003/stream&amp;autoplay=1.0
-</code></pre></div></div>
-
-<h3 id="点云录制">点云录制</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	1. get_pcd/01.get_pcd.pb.txt   ----------channel1: dynamic_points  ----- channel2: static_points     channel3: -----enable_channel1_get_pcd:true
-	2. .dag修改路径 ### orders
-
-root@in-dev-docker:/apollo# ./apollo.sh build_opt omnisense cyber
-
-root@in-dev-docker:/apollo/modules/omnisense# git branch
-</code></pre></div></div>
-
-<ul>
-  <li>
-    <p>master</p>
-
-    <p>root@in-dev-docker:/apollo/modules/omnisense# git checkout dev
-Branch ‘dev’ set up to track remote branch ‘dev’ from ‘origin’.
-Switched to a new branch ‘dev’
-root@in-dev-docker:/apollo/modules/omnisense# cd -
-/apollo</p>
-
-    <p>root@in-dev-docker:/apollo# ./modules/omnisense/tools/build.bash build all</p>
-
-    <p>xng@xng:~/CODE/OmniSense2.0/apollo$ ./docker/scripts/dev_into.sh</p>
-  </li>
-</ul>
-
-<h1 id="b">B</h1>
-
-<h1 id="c">C</h1>
-<h2 id="cuda">CUDA</h2>
-<h3 id="pytorch-对应-cuda版本">pytorch 对应 cuda版本</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import torch
-print(torch.version.cuda)
-</code></pre></div></div>
-
-<h3 id="cuda-1">CUDA</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH=/usr/local/cuda/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
-</code></pre></div></div>
-
-<h3 id="cudnn-tar--install">cudnn .tar  install</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo cp cudnn-*-archive/include/cudnn*.h /usr/local/cuda/include 
-sudo cp -P cudnn-*-archive/lib/libcudnn* /usr/local/cuda/lib64 
-sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn* # D ## Docker ### docker 可视化
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// RVIZ cannot display
-docker run --add-host=demo:172.16.115.75 -it --name osrf_melodic_full --net host --add-host $(hostname):127.0.0.1 --gpus all -v /tmp/.x11-unix:/tmp/.x11-unix -e DISPLAY=unix$DISPLAY -e GDK_SCALE -e GDK_DPI_SCALE -v /home/xng/CODE/osrf_melodic_full/:/home osrf/ros:melodic-desktop-full /bin/bash
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run –name ContainerName –gpus all –network host –env=DISPLAY –env=NVIDIA_DRIVER_CAPABILITIES=all -env=NVIDIA-VISIBLE_DEVICES=all –env=QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/tmp/.X11-unix:rw –runtime=nvidia –privileged -it DockerImage
-</code></pre></div></div>
-<hr />
-<h3 id="cannot-access-gpu-from-within-container-please-install-latest-docker-and-nvidia-container-toolkit-as-described-by">Cannot access GPU from within container. Please install latest Docker and NVIDIA Container Toolkit as described by:</h3>
-
-<ul>
-  <li>https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker</li>
-</ul>
-
-<h3 id="报错failed-to-connect-is-docker-running">报错Failed to connect. Is Docker running</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error: connect EACCES /var/run/docker.sock
-sudo groupadd docker          #添加docker用户组
-sudo gpasswd -a $USER docker  #将当前用户添加至docker用户组
-newgrp docker                 #更新docker用户组
-在终端打开vsode
-code
-</code></pre></div></div>
-
-<h3 id="docker--container-查看启动进入">docker  container 查看/启动/进入</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 	docker container ls --all 
-	docker start apollo_dev_root
-	docker ps 
-	sudo docker exec -it ae76016acd18 /bin/bash
-
-	source /apollo/cyber/setup.bash 
-</code></pre></div></div>
-
-<h3 id="docker-group">docker group</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo groupadd docker
-sudo usermod -aG docker $USER
-newgrp docker
-</code></pre></div></div>
-
-<h3 id="docker-images--container">docker images / container</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker pull
-docker run -it {name}:
-docker exec -it {ID} /bin/bash
-</code></pre></div></div>
-
-<h3 id="docker-拷贝本地文件到容器容器到本地文件">docker 拷贝本地文件到容器/容器到本地文件</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker cp 你的文件路径 容器长ID/name:docker容器路径 # E ## ERROR
-</code></pre></div></div>
-
-<h2 id="evo">EVO</h2>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">evo_ape tum 0_odom 5_imu_pose_after_trans.txt -va -r full -p --plot_mode xy`</span>
-
-<span class="s">evo_traj kitti KITTI_00_ORB.txt KITTI_00_SPTAM.txt --ref=KITTI_00_gt.txt -p --plot_mode=xz</span>
-
-<span class="s">evo_rpe tum 0_odom 5_imu_pose_after_trans.txt -r full -p --plot_mode xy</span>
-</code></pre></div></div>
-<h1 id="f">F</h1>
-
-<h1 id="g">G</h1>
-<h2 id="gdb">GDB</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gdb -q --args /apollo/bazel-bin/cyber/mainboard/mainboard -d /apollo/modules/omnisense/pose_monitor/dag/inno_pose_monitor.dag
-
-./bazel-bin/modules/omnisense/gps_info_capture/ins_posetrans_test
-</code></pre></div></div>
-<hr />
-<h2 id="git">GIT</h2>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">git</span> <span class="n">init</span>
-<span class="n">touch</span> <span class="n">Readme_new</span>
-<span class="n">git</span>  <span class="n">add</span> <span class="p">.</span>
-<span class="n">git</span>  <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="err">'提交的备注信息'</span>
-<span class="n">git</span>  <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="n">dev</span>
-<span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">origin</span> <span class="n">https</span><span class="o">:</span><span class="c1">//github.com/你的github用户名/你的github仓库.git  </span>
-<span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">master</span>
-<span class="n">git</span> <span class="n">pull</span> <span class="n">origin</span> <span class="n">master</span>
-<span class="err">更新远程分支列表</span>
-<span class="n">git</span> <span class="n">remote</span> <span class="n">update</span> <span class="n">origin</span> <span class="o">--</span><span class="n">prune</span>
-
-<span class="err">查看所有分支</span>
-<span class="n">git</span> <span class="n">branch</span> <span class="o">-</span><span class="n">a</span>
-
-<span class="err">删除远程分支</span><span class="n">Chapater6</span>
-<span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="o">--</span><span class="k">delete</span> <span class="n">Chapater6</span>
-
-<span class="err">删除本地分支</span> <span class="n">Chapater6</span>
-<span class="n">git</span> <span class="n">branch</span> <span class="o">-</span><span class="n">d</span>  <span class="n">Chapater6</span>
+  
     
-    <span class="c1">//at your own branch</span>
-    <span class="n">git</span> <span class="n">add</span> <span class="o">&lt;</span><span class="n">change</span><span class="o">&gt;</span>
-    <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s">"***"</span>
-    <span class="c1">// checkout to destieny branch</span>
-    <span class="n">git</span> <span class="n">checkout</span> <span class="n">autonoumous_driving</span>
-    <span class="n">git</span> <span class="n">pull</span>
-    <span class="c1">// back to own branch</span>
-    <span class="n">git</span> <span class="n">checkout</span> <span class="n">ad_posemonitor</span>
-    <span class="n">git</span> <span class="n">merge</span> <span class="n">autonoumous_driving</span>
-    <span class="c1">// fix conflict in vscode</span>
-    <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s">"***"</span>
-    <span class="n">git</span> <span class="n">push</span>
-</code></pre></div></div>
-<h3 id="从bitbucket下载">从bitbucket下载：</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-add ~/key
-git clone -b dev git@bitbucket.org:ivusw/omnisense.git
-git pull" 来更新您的本地分支
-git reset HEAD &lt;文件&gt;..." 以取消暂存
-git stash  暂存
-git pull   将远程存储库中的更改合并到当前分支中。 ---------- # H
-</code></pre></div></div>
-
-<h1 id="i">I</h1>
-<h2 id="innovusion">INNOVUSION</h2>
-<h3 id="falcon-ros">falcon-ros:</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//改ipv4:10.42.0.91
-http://10.42.0.91:8675/config.pyhtml
-//驱动版本是否匹配？/关网页点云
-//不匹配：
-~/falcon-lidar-sdk/build$ ./download-sdk-release.py ros-melodic-innovusion-driver-release-2.5.0-rc260-public.deb
-sudo dpkg -l | grep inno
-sudo dpkg -r ros-melodic-innovusion-driver-public //卸载旧驱动
-sudo dpkg -i  ros-melodic-innovusion-driver-release-2.5.0-rc260-public.deb
-roslaunch innovusion_pointcloud innovusion_points.launch device_ip:=10.42.0.91
-
-rosbag record /ivpoints   -o /home/xng/data/name.bag
-//bag2pcd
-rosrun pcl_ros bag_to_pcd &lt;input_file.bag&gt; &lt;topic&gt; &lt;output_directory&gt; # J
-</code></pre></div></div>
-
-<h1 id="k">K</h1>
-
-<h1 id="l">L</h1>
-
-<h1 id="m">M</h1>
-
-<h1 id="n">N</h1>
-
-<h1 id="o">O</h1>
-
-<h1 id="p">P</h1>
-<h2 id="python">python</h2>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="c1"># os.path.dirname (file)返回的是.py文件的目录
-</span>        <span class="c1"># os.path.abspath (file)返回的是.py文件的绝对路径
-</span>        <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">__file__</span><span class="p">))</span>
-        <span class="kn">import</span> <span class="nn">os</span>
-
-        <span class="k">print</span><span class="p">(</span><span class="s">'***获取当前目录***'</span><span class="p">)</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"当前目录是:{}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">getcwd</span><span class="p">()))</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"当前目录是:{}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">__file__</span><span class="p">))))</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">'***获取上级目录***'</span><span class="p">)</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"上级目录是:{}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">__file__</span><span class="p">)))))</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"上级目录是:{}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">getcwd</span><span class="p">()))))</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"上级目录是:{}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="s">".."</span><span class="p">))))</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">'***获取上上级目录***'</span><span class="p">)</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"上上级目录是:{}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="s">"../.."</span><span class="p">))))</span>
-        <span class="o">//</span><span class="n">拼接文件路径</span>
-        <span class="n">sys</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">append</span><span class="p">()</span>
-</code></pre></div></div>
-
-<h1 id="q">Q</h1>
-
-<h1 id="r">R</h1>
-<h2 id="ros">ROS</h2>
-<h3 id="fixed-frame-trans">fixed frame trans</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rosrun tf static_transform_publisher 0.0 0.0 0.0 0.0 0.0.0 base_link innovusion 100
-</code></pre></div></div>
-<hr />
-<h3 id="rosbag-to-pcdtxt">Rosbag to pcd/txt:</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rosrun pcl_ros bag_to_pcd &lt;input_file.bag&gt; &lt;topic&gt; &lt;output_directory&gt;
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rosbag play XXX.bag
-rosrun pcl_ros pointcloud_to_pcd input:=/velodyne_points
-</code></pre></div></div>
-
-<ul>
-  <li>rosbag topic to txt:</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rostopic echo -b filename.bag -p /topic &gt; txtname.txt
-</code></pre></div></div>
-<h3 id="查看frame_id">查看frame_id</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rostopic echo /topic | grep frame_id -------------- # S
-</code></pre></div></div>
-
-<h1 id="t">T</h1>
-<h2 id="torch">torch</h2>
+    <category term="Blogging" />
+    
+    <category term="Tutorial" />
+    
+  
 
-<ul>
-  <li>numpy2torch / torch2numpy</li>
-</ul>
+  
+    <summary>
+      
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">tor_datas</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">from_numpy</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">tor2numpy</span><span class="o">=</span><span class="n">tor_arr</span><span class="p">.</span><span class="n">numpy</span><span class="p">(</span>
-</code></pre></div></div>
-<h1 id="u">U</h1>
 
-<h1 id="v">V</h1>
 
-<h1 id="w">W</h1>
 
-<h1 id="x">X</h1>
 
-<h1 id="y">Y</h1>
+      
+  The content of this post applies only to Universal Analytics property (UA), not Google Analytics 4 (GA 4). In addition, since UA is about to be deprecated on Jul 1, 2023, the Page Views feature of Chirpy will also be deprecated at that time.
 
-<h1 id="z">Z</h1>]]></content><author><name>printeger</name></author><category term="Lookup" /><category term="Dict" /><summary type="html"><![CDATA[A APOLLO play .record channle 监控 sdk/repo download 启动数据集 点云录制 orders B C CUDA pytorch 对应 cuda版本 CUDA cudnn .tar install D Docker docker 可视化 Cannot access GPU from within container. Please install latest Docker and NVIDIA Container Toolkit as described by: 报错Failed to connect. Is Docker running docker container 查看/启动/进入 docker group docker images / container docker 拷贝本地文件到容器/容器到本地文件 E ERROR EVO F G GDB GIT 从bitbucket下载： H I INNOVUSION falcon-ros: J K L M N O P python Q R ROS fixed frame trans Rosbag to pcd/txt: 查看frame_id S T torch U V W X Y Z]]></summary></entry><entry><title type="html">Motion Compensation</title><link href="http://0.0.0.0:8080/printeger.github.io/blog/2022/Motion-Compensation/" rel="alternate" type="text/html" title="Motion Compensation" /><published>2022-10-19T04:00:00+00:00</published><updated>2022-10-19T04:00:00+00:00</updated><id>http://0.0.0.0:8080/printeger.github.io/blog/2022/Motion-Compensation</id><content type="html" xml:base="http://0.0.0.0:8080/printeger.github.io/blog/2022/Motion-Compensation/"><![CDATA[]]></content><author><name>printeger</name></author><category term="Project" /><category term="SLAM" /><category term="SLAM" /><category term="LiDAR" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">IMU Error Analysis</title><link href="http://0.0.0.0:8080/printeger.github.io/blog/2022/IMU-Error-Analysis/" rel="alternate" type="text/html" title="IMU Error Analysis" /><published>2022-08-26T04:00:00+00:00</published><updated>2022-08-26T04:00:00+00:00</updated><id>http://0.0.0.0:8080/printeger.github.io/blog/2022/IMU-Error-Analysis</id><content type="html" xml:base="http://0.0.0.0:8080/printeger.github.io/blog/2022/IMU-Error-Analysis/"><![CDATA[<ul>
-  <li><a href="#1-信号误差组成">1. 信号误差组成</a>
-    <ul>
-      <li><a href="#1-量化噪声">1) 量化噪声</a></li>
-      <li><a href="#2-角度随机游走">2) 角度随机游走</a></li>
-      <li><a href="#3-角速率随机游走">3) 角速率随机游走</a></li>
-      <li><a href="#4-零偏不稳定性噪声">4) 零偏不稳定性噪声</a></li>
-      <li><a href="#5-速率斜坡">5) 速率斜坡</a></li>
-      <li><a href="#6-零偏重复性">6) 零偏重复性</a></li>
-    </ul>
-  </li>
-  <li><a href="#2-信号误差分析----allan方差">2. 信号误差分析— Allan方差</a></li>
-  <li><a href="#3-imu内参">3. IMU内参</a>
-    <ul>
-      <li><a href="#1零偏误差">1）零偏误差：</a></li>
-      <li><a href="#2刻度系数误差">2）刻度系数误差：</a></li>
-      <li><a href="#3安装误差">3）安装误差：</a></li>
-    </ul>
-  </li>
-  <li><a href="#4-内参标定">4. 内参标定</a>
-    <ul>
-      <li><a href="#41-需要转台">4.1 需要转台：</a></li>
-      <li><a href="#42-无需外部辅助">4.2 无需外部辅助：</a></li>
-    </ul>
-  </li>
-  <li><a href="#5-温度补偿">5. 温度补偿</a></li>
-</ul>
 
-<h1 id="1-信号误差组成">1. 信号误差组成</h1>
+This post is to enable Page Views on the Chirpy theme based blog that you just built. This requires technical knowledge and it’s recommended to keep t...
+    </summary>
+  
 
-<h2 id="1-量化噪声">1) 量化噪声</h2>
+  </entry>
 
-<p>一切量化操作所固有的噪声,是数字传感器必然出现的噪声;
-产生原因: 通过AD采集把连续时间信号采集成离散信号的过程中,精度会损失,精度损失的大小和AD转换的步长
-有关,步长越小,量化噪声越小。</p>
+  
+  <entry>
+    <title>Customize the Favicon</title>
+    <link href="http://localhost:4000/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
+    <published>2019-08-11T00:34:00+08:00</published>
+  
+    <updated>2019-08-11T00:34:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/customize-the-favicon/</id>
+    <content src="http://localhost:4000/posts/customize-the-favicon/" />
+    <author>
+      <name>cotes</name>
+    </author>
 
-<h2 id="2-角度随机游走">2) 角度随机游走</h2>
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Tutorial" />
+    
+  
 
-<p>宽带角速率白噪声:陀螺输出角速率是含噪声的,该噪声中的白噪声成分;
-产生原因:计算姿态的本质是对角速率做积分,这必然会对噪声也做了积分。白噪声的积分并不是白噪声,而是一个马尔可夫过程,即当前时刻的误差是在上一时刻误差的基础上累加一个随机白噪声得到的。
-角度误差中所含的马尔可夫性质的误差,称为角度随机游走。</p>
+  
+    <summary>
+      
 
-<h2 id="3-角速率随机游走">3) 角速率随机游走</h2>
 
-<p>与角度随机游走类似,角速率误差中所含的马尔可夫性质的误差,称为角速率随机游走。而这个马尔可夫性质的误差是由宽带角加速率白噪声累积的结果。</p>
 
-<h2 id="4-零偏不稳定性噪声">4) 零偏不稳定性噪声</h2>
 
-<p>零偏:即常说的bias,一般不是一个固定参数,而是在一定范围内缓慢随机飘移。
-零偏不稳定性:零偏随时间缓慢变化,其变化值无法预估,需要假定一个概率区间描述它有多大的可能性落在这个
-区间内。时间越长,区间越大。</p>
 
-<h2 id="5-速率斜坡">5) 速率斜坡</h2>
+      The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.
 
-<p>该误差是趋势性误差,而不是随机误差。
-随机误差,是指你无法用确定性模型去拟合并消除它,最多只能用概率模型去描述它,这样得到的预测结果也是概率性质的。
-趋势性误差,是可以直接拟合消除的,在陀螺里产生这种误差最常见的原因是温度引起零位变化,可以通过温补来消除。</p>
+Generate the favicon
 
-<h2 id="6-零偏重复性">6) 零偏重复性</h2>
+Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image ...
+    </summary>
+  
 
-<p>多次启动时,零偏不相等,因此会有一个重复性误差。在实际使用中,需要每次上电都重新估计一次。
-Allan方差分析时,不包含对零偏重复性的分析。</p>
+  </entry>
 
-<h1 id="2-信号误差分析-allan方差">2. 信号误差分析— Allan方差</h1>
+  
+  <entry>
+    <title>Getting Started</title>
+    <link href="http://localhost:4000/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
+    <published>2019-08-09T20:55:00+08:00</published>
+  
+    <updated>2019-08-09T20:55:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/getting-started/</id>
+    <content src="http://localhost:4000/posts/getting-started/" />
+    <author>
+      <name>cotes</name>
+    </author>
 
-<p>在惯性器件随机误差分析中,以上提到的5种误差相互独立,且值不同,因此若绘制“时间间隔-方差双对数曲线”(时间间隔是频率的倒数,方差是功率谱的积分), 则得到的曲线斜率必不相同。
-根据曲线斜率识别出各项误差,并计算出对应的误差强度。</p>
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Tutorial" />
+    
+  
 
-<p><img src="pic/7/1.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/7/1.png" alt="" /></p>
+  
+    <summary>
+      
 
-<p>求曲线与T=1的交点，求得Q、N、K、B、R。</p>
 
-<p>使用：</p>
 
-<p>角度随机游走,在融合时作为陀螺仪的噪声使用。(有时也以零偏不稳定性当做噪声)</p>
 
-<p>2.角速度随机游走,作为陀螺仪微分项中的噪声</p>
 
-<p>其他误差项,仅起到了解器件精度水平的作用;</p>
+      Prerequisites
 
-<p>实际融合时,Allan分析的结果,只是作为初值使用,需要在此基础上调参。</p>
-
-<h1 id="3-imu内参">3. IMU内参</h1>
-
-<h2 id="1零偏误差">1）零偏误差：</h2>
-<p>陀螺仪或加速度计输出中的常值偏移,即常说的 bias。</p>
-
-<p><img src="pic/7/2.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/7/2.png" alt="" /></p>
-
-<p><img src="pic/7/3.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/7/3.png" alt="" /></p>
-
-<h2 id="2刻度系数误差">2）刻度系数误差：</h2>
-<p>器件的输出往往为脉冲值或模数转换得到的值,需要乘以一个刻度系数才能转换成角速度或加速度值,若该系数不准,便存在刻度系数误差。</p>
-
-<p><img src="pic/7/4.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/7/4.png" alt="" /></p>
-
-<h2 id="3安装误差">3）安装误差：</h2>
-<p>如图所示,b坐标系是正交的imu坐标系,g坐标系的三个轴是分别对应三个陀螺仪。由于加工工艺原因,陀螺仪的三个轴并不正交,而且和b坐标系的轴不重合,二者之间的偏差即为安装误差。</p>
-
-<p><img src="pic/7/5.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/7/5.png" alt="" /></p>
-
-<p>陀螺仪的输出:</p>
-
-<p><img src="pic/7/6.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/7/6.png" alt="" /></p>
-
-<p>加速度计的输出：</p>
-
-<p><img src="pic/7/7.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/7/7.png" alt="" /></p>
-
-<h1 id="4-内参标定">4. 内参标定</h1>
-
-<h2 id="41-需要转台">4.1 需要转台：</h2>
-<p>精度高,成本高</p>
-
-<h2 id="42-无需外部辅助">4.2 无需外部辅助：</h2>
-<p>精度差,成本低、效率高，对一般MEMS已足够</p>
-
-<p>https://github.com/Kyle-ak/imu_tk</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[ A  Robust  and  Easy  to  Implement  Method  for  IMU  Calibration  withoutExternal  Equipments ] 
-</code></pre></div></div>
-
-<h1 id="5-温度补偿">5. 温度补偿</h1>
-
-<p><img src="pic/7/8.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/7/8.png" alt="" /></p>
-
-<p>B：IMU bias, T：温度，delt_T：变温率，f：未知模型。通常：</p>
-
-<p><img src="pic/7/9.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/7/9.png" alt="" /></p>]]></content><author><name>printeger</name></author><category term="Project" /><category term="Sensor" /><category term="IMU" /><category term="Sensor" /><summary type="html"><![CDATA[1. 信号误差组成 1) 量化噪声 2) 角度随机游走 3) 角速率随机游走 4) 零偏不稳定性噪声 5) 速率斜坡 6) 零偏重复性 2. 信号误差分析— Allan方差 3. IMU内参 1）零偏误差： 2）刻度系数误差： 3）安装误差： 4. 内参标定 4.1 需要转台： 4.2 无需外部辅助： 5. 温度补偿]]></summary></entry><entry><title type="html">Lidar IMU Extrinsic Calibration Experiment</title><link href="http://0.0.0.0:8080/printeger.github.io/blog/2022/Lidar-IMU-Extrinsic-Calibration-Experiment/" rel="alternate" type="text/html" title="Lidar IMU Extrinsic Calibration Experiment" /><published>2022-08-14T04:00:00+00:00</published><updated>2022-08-14T04:00:00+00:00</updated><id>http://0.0.0.0:8080/printeger.github.io/blog/2022/Lidar-IMU-Extrinsic-Calibration-Experiment</id><content type="html" xml:base="http://0.0.0.0:8080/printeger.github.io/blog/2022/Lidar-IMU-Extrinsic-Calibration-Experiment/"><![CDATA[<ul>
-  <li><a href="#1-usage">1. Usage</a>
-    <ul>
-      <li><a href="#11-data-collect-procedure">1.1 Data Collect Procedure</a></li>
-      <li><a href="#12-precision-indicators">1.2 Precision Indicators</a>
-        <ul>
-          <li><a href="#121-rpe-relative-pose-error">1.2.1 RPE: relative pose error</a></li>
-          <li><a href="#122-ate-absolute-trajectory-error">1.2.2 ATE: absolute trajectory error</a></li>
-        </ul>
-      </li>
-      <li><a href="#13-in--out">1.3 in \&amp; out</a></li>
-    </ul>
-  </li>
-  <li><a href="#2-calibration-result">2. Calibration Result</a>
-    <ul>
-      <li><a href="#20-extrinsic-matrix">2.0 Extrinsic Matrix</a></li>
-      <li><a href="#21-calib-data0655">2.1 Calib Data:(0655)</a>
-        <ul>
-          <li><a href="#211-traj">2.1.1 Traj</a></li>
-          <li><a href="#212-xyz">2.1.2 XYZ</a></li>
-          <li><a href="#213-rpy">2.1.3 RPY</a></li>
-          <li><a href="#214-ape">2.1.4 APE</a></li>
-          <li><a href="#215-rpe">2.1.5 RPE</a></li>
-        </ul>
-      </li>
-      <li><a href="#22-valid-data0657">2.2 Valid Data:(0657)</a>
-        <ul>
-          <li><a href="#221-traj">2.2.1 Traj</a></li>
-          <li><a href="#222-xyz">2.2.2 XYZ</a></li>
-          <li><a href="#223-rpy">2.2.3 RPY</a></li>
-          <li><a href="#224-ape">2.2.4 APE</a></li>
-          <li><a href="#225-rpe">2.2.5 RPE</a></li>
-        </ul>
-      </li>
-      <li><a href="#23-valid-datalarge-sacle">2.3 Valid Data:(large sacle)</a>
-        <ul>
-          <li><a href="#231-traj">2.3.1 Traj</a></li>
-          <li><a href="#232-xyz">2.3.2 XYZ</a></li>
-          <li><a href="#233-rpy">2.3.3 RPY</a></li>
-          <li><a href="#234-ape">2.3.4 APE</a></li>
-          <li><a href="#235-rpe">2.3.5 RPE</a></li>
-        </ul>
-      </li>
-      <li><a href="#24-valid-data7_left_turn_speed_25">2.4 Valid Data:(7_left_turn_speed_25)</a>
-        <ul>
-          <li><a href="#241-traj">2.4.1 Traj</a></li>
-          <li><a href="#242-xyz">2.4.2 XYZ</a></li>
-          <li><a href="#243-rpy">2.4.3 RPY</a></li>
-          <li><a href="#244-ape">2.4.4 APE</a></li>
-          <li><a href="#245-rpe">2.4.5 RPE</a></li>
-        </ul>
-      </li>
-      <li><a href="#25-valid-data8_right_turn_speed_20">2.5 Valid Data:(8_right_turn_speed_20)</a>
-        <ul>
-          <li><a href="#251-traj">2.5.1 Traj</a></li>
-          <li><a href="#252-xyz">2.5.2 XYZ</a></li>
-          <li><a href="#253-rpy">2.5.3 RPY</a></li>
-          <li><a href="#254-ape">2.5.4 APE</a></li>
-          <li><a href="#255-rpe">2.5.5 RPE</a></li>
-        </ul>
-      </li>
-      <li><a href="#26-valid-data9_right_turn_speed_40">2.6 Valid Data:(9_right_turn_speed_40)</a>
-        <ul>
-          <li><a href="#261-traj">2.6.1 Traj</a></li>
-          <li><a href="#262-xyz">2.6.2 XYZ</a></li>
-          <li><a href="#263-rpy">2.6.3 RPY</a></li>
-          <li><a href="#264-ape">2.6.4 APE</a></li>
-          <li><a href="#265-rpe">2.6.5 RPE</a></li>
-        </ul>
-      </li>
-      <li><a href="#27-valid-data10_right_turn_speed_40">2.7 Valid Data:(10_right_turn_speed_40)</a>
-        <ul>
-          <li><a href="#271-traj">2.7.1 Traj</a></li>
-          <li><a href="#272-xyz">2.7.2 XYZ</a></li>
-          <li><a href="#273-rpy">2.7.3 RPY</a></li>
-          <li><a href="#274-ape">2.7.4 APE</a></li>
-          <li><a href="#275-rpe">2.7.5 RPE</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h1 id="1-usage">1. Usage</h1>
-<h2 id="11-data-collect-procedure">1.1 Data Collect Procedure</h2>
-
-<p>More than three motions in different positions and orientations are required, so that the equation is full rank and can be solved linearly.</p>
-
-<ul class="task-list">
-  <li class="task-list-item">
-    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Therefore, the algorithm requires the trajectory needs to contain translations and rotations(like vehicle to travel in the shape of figure 8, as shown in Figure down below).</p>
-  </li>
-  <li class="task-list-item">
-    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />The point cloud and GNSS+INS data of the trajectory need to be recorded simultaneously.</p>
-  </li>
-  <li class="task-list-item">
-    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />There should be rich features in the experimental environment, like buildings, and less moving objects, like moving vehicle, which will affect the result of Lidar odometry.</p>
-  </li>
-  <li class="task-list-item">
-    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Do not test in an environment surrounded by tall buildings, this will affect the accuracy of GNSS.</p>
-  </li>
-  <li class="task-list-item">
-    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Could record more than one sets of data for verification if necessary.</p>
-  </li>
-</ul>
-
-<p><img src="pic/5/4.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/4.png" alt="" /></p>
-
-<h2 id="12-precision-indicators">1.2 Precision Indicators</h2>
-<blockquote>
-  <p>estimate pose:</p>
-
-  <p><img src="pic/5/17.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/17.png" alt="" /></p>
-</blockquote>
-
-<blockquote>
-  <p>reference pose:</p>
-
-  <p><img src="pic/5/18.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/18.png" alt="" /></p>
-</blockquote>
-
-<h3 id="121-rpe-relative-pose-error">1.2.1 RPE: relative pose error</h3>
-<blockquote>
-  <p>i frame RPE:</p>
-
-  <p><img src="pic/5/19.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/19.png" alt="" /></p>
-</blockquote>
-
-<p><img src="pic/5/20.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/20.png" alt="" /></p>
-
-<h3 id="122-ate-absolute-trajectory-error">1.2.2 ATE: absolute trajectory error</h3>
-
-<p><img src="pic/5/21.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/21.png" alt="" /></p>
-
-<p><img src="pic/5/22.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/22.png" alt="" /></p>
-
-<p><img src="pic/5/23.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/23.png" alt="" /></p>
-
-<h2 id="13-in--out">1.3 in &amp; out</h2>
-
-<p>Input:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// PointCloud
-pcl::PointCloud&lt;pointXYZ&gt; point_in;
-// IMU pose
-std::vector&lt;Eigen::Matrix4d&gt; IMU_pose;
-// PointCloud timestamps
-std::vector&lt;double&gt; timestamps;
-</code></pre></div></div>
-<p>Output:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//Extrinsic Matrix: 
-Eigen::Matrix4d calibratedTransformation;
-/*
-|  R T  |
-|_ 0 1 _|
-*/
-</code></pre></div></div>
-
-<h1 id="2-calibration-result">2. Calibration Result</h1>
-<h2 id="20-extrinsic-matrix">2.0 Extrinsic Matrix</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[0.9996387536200673, -0.01085860442221318, 0.02458562529040346, -1.697536587497878],
-[-0.01096721316998588, -0.9999306683289505, 0.004287046827647254, -0.007142523421813133],
-[0.02453736938227735, -0.004555133940977415, -0.99968853562426, -1.502642065472676],
-[0, 0, 0, 1]]
-</code></pre></div></div>
-<h2 id="21-calib-data0655">2.1 Calib Data:(0655)</h2>
-<h3 id="211-traj">2.1.1 Traj</h3>
-<p><img src="pic/6/1.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/1.png" alt="" /></p>
-<h3 id="212-xyz">2.1.2 XYZ</h3>
-<p><img src="pic/6/2.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/2.png" alt="" /></p>
-<h3 id="213-rpy">2.1.3 RPY</h3>
-<p><img src="pic/6/3.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/3.png" alt="" /></p>
-<h3 id="214-ape">2.1.4 APE</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>max	0.307479
-mean	0.123667
-median	0.122317
-min	0.009096
-rmse	0.133519
-sse	19.217960
-std	0.050338
-</code></pre></div></div>
-<p><img src="pic/6/4.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/4.png" alt="" /></p>
-<h3 id="215-rpe">2.1.5 RPE</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>max	0.125233
-mean	0.031746
-median	0.027947
-min	0.002622
-rmse	0.038173
-sse	1.569387
-std	0.021198
-</code></pre></div></div>
-<p><img src="pic/6/5.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/5.png" alt="" /></p>
-
-<h2 id="22-valid-data0657">2.2 Valid Data:(0657)</h2>
-<h3 id="221-traj">2.2.1 Traj</h3>
-<p><img src="pic/6/6.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/6.png" alt="" /></p>
-<h3 id="222-xyz">2.2.2 XYZ</h3>
-<p><img src="pic/6/7.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/7.png" alt="" /></p>
-<h3 id="223-rpy">2.2.3 RPY</h3>
-<p><img src="pic/6/8.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/8.png" alt="" /></p>
-<h3 id="224-ape">2.2.4 APE</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>max	0.352818
-mean	0.108570
-median	0.095848
-min	0.006885
-rmse	0.127275
-sse	13.347926
-std	0.066419
-</code></pre></div></div>
-<p><img src="pic/6/9.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/9.png" alt="" /></p>
-<h3 id="225-rpe">2.2.5 RPE</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>max	0.183633
-mean	0.029524
-median	0.026837
-min	0.001288
-rmse	0.034410
-sse	0.974481
-std	0.017675
-</code></pre></div></div>
-<p><img src="pic/6/10.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/10.png" alt="" /></p>
-<h2 id="23-valid-datalarge-sacle">2.3 Valid Data:(large sacle)</h2>
-<h3 id="231-traj">2.3.1 Traj</h3>
-<p><img src="pic/6/11.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/11.png" alt="" /></p>
-<h3 id="232-xyz">2.3.2 XYZ</h3>
-<p><img src="pic/6/12.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/12.png" alt="" /></p>
-<h3 id="233-rpy">2.3.3 RPY</h3>
-<p><img src="pic/6/13.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/13.png" alt="" /></p>
-<h3 id="234-ape">2.3.4 APE</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>max	2.925505
-mean	0.959726
-median	0.750311
-min	0.205600
-rmse	1.168728
-sse	4457.011678
-std	0.666971
-</code></pre></div></div>
-<p><img src="pic/6/14.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/14.png" alt="" /></p>
-<h3 id="235-rpe">2.3.5 RPE</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>max	0.372968
-mean	0.095626
-median	0.073501
-min	0.001336
-rmse	0.127043
-sse	52.648051
-std	0.083639
-</code></pre></div></div>
-<p><img src="pic/6/15.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/15.png" alt="" /></p>
-<h2 id="24-valid-data7_left_turn_speed_25">2.4 Valid Data:(7_left_turn_speed_25)</h2>
-<h3 id="241-traj">2.4.1 Traj</h3>
-<p><img src="pic/6/16.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/16.png" alt="" /></p>
-<h3 id="242-xyz">2.4.2 XYZ</h3>
-<p><img src="pic/6/17.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/17.png" alt="" /></p>
-<h3 id="243-rpy">2.4.3 RPY</h3>
-<p><img src="pic/6/18.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/18.png" alt="" /></p>
-<h3 id="244-ape">2.4.4 APE</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>max	0.906424
-mean	0.433745
-median	0.458177
-min	0.032235
-rmse	0.482597
-sse	44.483811
-std	0.211576
-</code></pre></div></div>
-<p><img src="pic/6/19.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/19.png" alt="" /></p>
-<h3 id="245-rpe">2.4.5 RPE</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>max	0.122539
-mean	0.059356
-median	0.059501
-min	0.006692
-rmse	0.065355
-sse	0.811532
-std	0.027350
-</code></pre></div></div>
-<p><img src="pic/6/20.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/20.png" alt="" /></p>
-<h2 id="25-valid-data8_right_turn_speed_20">2.5 Valid Data:(8_right_turn_speed_20)</h2>
-<h3 id="251-traj">2.5.1 Traj</h3>
-<p><img src="pic/6/21.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/21.png" alt="" /></p>
-<h3 id="252-xyz">2.5.2 XYZ</h3>
-<p><img src="pic/6/22.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/22.png" alt="" /></p>
-<h3 id="253-rpy">2.5.3 RPY</h3>
-<p><img src="pic/6/23.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/23.png" alt="" /></p>
-<h3 id="254-ape">2.5.4 APE</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>max	3.209363
-mean	0.748066
-median	0.543427
-min	0.010104
-rmse	1.007491
-sse	163.421082
-std	0.674860
-</code></pre></div></div>
-<p><img src="pic/6/24.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/24.png" alt="" /></p>
-<h3 id="255-rpe">2.5.5 RPE</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>max	1.053835
-mean	0.117616
-median	0.071761
-min	0.011882
-rmse	0.194937
-sse	6.080060
-std	0.155457
-</code></pre></div></div>
-<p><img src="pic/6/25.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/25.png" alt="" /></p>
-<h2 id="26-valid-data9_right_turn_speed_40">2.6 Valid Data:(9_right_turn_speed_40)</h2>
-<h3 id="261-traj">2.6.1 Traj</h3>
-<p><img src="pic/6/26.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/26.png" alt="" /></p>
-<h3 id="262-xyz">2.6.2 XYZ</h3>
-<p><img src="pic/6/27.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/27.png" alt="" /></p>
-<h3 id="263-rpy">2.6.3 RPY</h3>
-<p><img src="pic/6/28.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/28.png" alt="" /></p>
-<h3 id="264-ape">2.6.4 APE</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>max	1.115413
-mean	0.527681
-median	0.531853
-min	0.126005
-rmse	0.557352
-sse	31.685443
-std	0.179429
-</code></pre></div></div>
-<p><img src="pic/6/29.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/29.png" alt="" /></p>
-<h3 id="265-rpe">2.6.5 RPE</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>max	0.443761
-mean	0.118309
-median	0.098930
-min	0.012560
-rmse	0.149402
-sse	2.254411
-std	0.091235
-</code></pre></div></div>
-<p><img src="pic/6/30.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/30.png" alt="" /></p>
-<h2 id="27-valid-data10_right_turn_speed_40">2.7 Valid Data:(10_right_turn_speed_40)</h2>
-<h3 id="271-traj">2.7.1 Traj</h3>
-<p><img src="pic/6/31.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/31.png" alt="" /></p>
-<h3 id="272-xyz">2.7.2 XYZ</h3>
-<p><img src="pic/6/32.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/32.png" alt="" /></p>
-<h3 id="273-rpy">2.7.3 RPY</h3>
-<p><img src="pic/6/33.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/33.png" alt="" /></p>
-<h3 id="274-ape">2.7.4 APE</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>max	1.584476
-mean	0.527325
-median	0.449033
-min	0.076434
-rmse	0.602559
-sse	52.646241
-std	0.291557
-</code></pre></div></div>
-<p><img src="pic/6/34.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/34.png" alt="" /></p>
-<h3 id="275-rpe">2.7.5 RPE</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>max	1.256550
-mean	0.229395
-median	0.141439
-min	0.008515
-rmse	0.368821
-sse	19.588214
-std	0.288803
-</code></pre></div></div>
-<p><img src="pic/6/35.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/6/35.png" alt="" /></p>]]></content><author><name>printeger</name></author><category term="Project" /><category term="Calibration" /><category term="LiDAR" /><category term="IMU" /><category term="Sensor" /><category term="Calibration" /><category term="Experiment" /><category term="SLAM" /><summary type="html"><![CDATA[1. Usage 1.1 Data Collect Procedure 1.2 Precision Indicators 1.2.1 RPE: relative pose error 1.2.2 ATE: absolute trajectory error 1.3 in \&amp; out 2. Calibration Result 2.0 Extrinsic Matrix 2.1 Calib Data:(0655) 2.1.1 Traj 2.1.2 XYZ 2.1.3 RPY 2.1.4 APE 2.1.5 RPE 2.2 Valid Data:(0657) 2.2.1 Traj 2.2.2 XYZ 2.2.3 RPY 2.2.4 APE 2.2.5 RPE 2.3 Valid Data:(large sacle) 2.3.1 Traj 2.3.2 XYZ 2.3.3 RPY 2.3.4 APE 2.3.5 RPE 2.4 Valid Data:(7_left_turn_speed_25) 2.4.1 Traj 2.4.2 XYZ 2.4.3 RPY 2.4.4 APE 2.4.5 RPE 2.5 Valid Data:(8_right_turn_speed_20) 2.5.1 Traj 2.5.2 XYZ 2.5.3 RPY 2.5.4 APE 2.5.5 RPE 2.6 Valid Data:(9_right_turn_speed_40) 2.6.1 Traj 2.6.2 XYZ 2.6.3 RPY 2.6.4 APE 2.6.5 RPE 2.7 Valid Data:(10_right_turn_speed_40) 2.7.1 Traj 2.7.2 XYZ 2.7.3 RPY 2.7.4 APE 2.7.5 RPE]]></summary></entry><entry><title type="html">Lidar IMU Extrinsic Calibration Overview</title><link href="http://0.0.0.0:8080/printeger.github.io/blog/2022/Lidar-IMU-Extrinsic-Calibration-Overview/" rel="alternate" type="text/html" title="Lidar IMU Extrinsic Calibration Overview" /><published>2022-07-22T04:00:00+00:00</published><updated>2022-07-22T04:00:00+00:00</updated><id>http://0.0.0.0:8080/printeger.github.io/blog/2022/Lidar-IMU-Extrinsic-Calibration-Overview</id><content type="html" xml:base="http://0.0.0.0:8080/printeger.github.io/blog/2022/Lidar-IMU-Extrinsic-Calibration-Overview/"><![CDATA[<ul>
-  <li><a href="#1-overall-structure">1. Overall Structure</a></li>
-  <li><a href="#2-hand-eye-caliration-method">2. Hand-Eye Caliration Method</a></li>
-  <li><a href="#3-solve-ax--xb">3. Solve AX = XB</a></li>
-  <li><a href="#4-dual-quaternion">4. Dual Quaternion</a></li>
-  <li><a href="#5-related-page">5. Related Page</a></li>
-</ul>
-
-<h1 id="1-overall-structure">1. Overall Structure</h1>
-
-<p><img src="pic/5/1.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/1.png" alt="" /></p>
-
-<h1 id="2-hand-eye-caliration-method">2. Hand-Eye Caliration Method</h1>
-
-<p><img src="pic/5/5.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/5.png" alt="" /></p>
-
-<blockquote>
-  <p>Mainly based on hand-eye calibration method</p>
-</blockquote>
-
-<p><img src="pic/5/2.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/2.png" alt="" /></p>
-
-<p><img src="pic/5/3.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/3.png" alt="" /></p>
-
-<blockquote>
-  <p>The extrinsic matrix is from IMU axis to Lidar axis.</p>
-
-  <p>Lidar_pose = Extrinsic * IMU_pose * Extrinsic.inverse()</p>
-</blockquote>
-
-<h1 id="3-solve-ax--xb">3. Solve AX = XB</h1>
-
-<p>The function performs the Hand-Eye calibration using various methods.</p>
-
-<ul class="task-list">
-  <li class="task-list-item">
-    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />One approach consists in estimating the rotation then the translation (separable solutions).</p>
-  </li>
-  <li class="task-list-item">
-    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Separable solutions solving separately damages the integrity of the kinematics problem and leads to coupling errors in the calculation of rotation and translation.</p>
-  </li>
-</ul>
-
-<blockquote>
-  <p>R. Tsai, R. Lenz A New Technique for Fully Autonomous and Efficient 3D Robotics Hand/EyeCalibration</p>
-
-  <p>F. Park, B. Martin Robot Sensor Calibration: Solving AX = XB on the Euclidean Group</p>
-
-  <p>R. Horaud, F. Dornaika Hand-Eye Calibration</p>
-</blockquote>
-
-<ul class="task-list">
-  <li class="task-list-item">
-    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Another approach consists in estimating simultaneously the rotation and the translation (simultaneous solutions).</p>
-  </li>
-  <li class="task-list-item">
-    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Simultaneous solutions handle rotation and translation simultaneously and describes pose transformation in a unified manner, reducing complexity and improving calibration accuracy.</p>
-  </li>
-</ul>
-
-<blockquote>
-  <p>N. Andreff, R. Horaud, B. Espiau On-line Hand-Eye Calibration</p>
-
-  <p>K. Daniilidis Hand-Eye Calibration Using Dual Quaternions</p>
-</blockquote>
-
-<p>In this program, we use K. Daniilidis’s Dual Quaternions method to solve AX=XB problem.</p>
-
-<h1 id="4-dual-quaternion">4. Dual Quaternion</h1>
-<ul>
-  <li>dual number:</li>
-</ul>
-
-<p><img src="pic/5/6.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/6.png" alt="" /></p>
-
-<ul>
-  <li>dual quaternion:</li>
-</ul>
-
-<p><img src="pic/5/7.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/7.png" alt="" /></p>
-
-<p><img src="pic/5/8.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/8.png" alt="" /></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>point b to point a :
-
-use quaternion:  pa = q * pb * q̄
-
-A line in space with direction la through a point pa to a line in space with direction lb through a point pb: 
-
-la = q * lb * q̄
-</code></pre></div></div>
-
-<p>Hand-Eye Transformation with Unit Dual Quaternions:</p>
-
-<p><img src="pic/5/9.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/9.png" alt="" /></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ǎ denote the screw of a camera motion, and b̌  denote the screw of the hand motion.
-</code></pre></div></div>
-
-<p><img src="pic/5/10.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/10.png" alt="" /></p>
-
-<p>Multiplying on the right with q.</p>
-
-<p><img src="pic/5/11.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/11.png" alt="" /></p>
-
-<p>Let a = (0, a) and a’ = (0, a’), as well as b = (0, b), b’ = (0, b’).</p>
-
-<p><img src="pic/5/12.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/12.png" alt="" /></p>
-
-<p>SVD:</p>
-
-<p><img src="pic/5/13.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/13.png" alt="" /></p>
-
-<p>results:</p>
-
-<p><img src="pic/5/14.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/14.png" alt="" /></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>v7, v8 is the last two right-singular vectors
-</code></pre></div></div>
-
-<ul>
-  <li>compare to two-steps method(Tsai method) and nonlinear method:</li>
-</ul>
-
-<p><img src="pic/5/15.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/15.png" alt="" /></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   Behavior of the dual quaternion (DUAL), the nonlinear (NLIN), and the two-step (SEPA) algorithms with variation in noise. The RMS rotation error is shown on the left; the RMS relative translation error is on the right.
-</code></pre></div></div>
-
-<p><img src="pic/5/16.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/5/16.png" alt="" /></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The RMS error in rotation (left) and the RMS relative error in translation (right) as a function of the number of hand and camera motions.
-</code></pre></div></div>
-
-<h1 id="5-related-page">5. Related Page</h1>
-
-<blockquote>
-  <p>module design
-https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html#gaebfc1c9f7434196a374c382abf43439b</p>
-</blockquote>
-
-<blockquote>
-  <p>past calibration result</p>
-</blockquote>
-
-<p>https://printeger.github.io/2022/08/14/Lidar-IMU-Extrinsic-Calibration-Experiment.html</p>]]></content><author><name>printeger</name></author><category term="Project" /><category term="Calibration" /><category term="LiDAR" /><category term="IMU" /><category term="Sensor" /><category term="Calibration" /><category term="Overview" /><category term="SLAM" /><summary type="html"><![CDATA[1. Overall Structure 2. Hand-Eye Caliration Method 3. Solve AX = XB 4. Dual Quaternion 5. Related Page]]></summary></entry><entry><title type="html">3D Pointcloud Classification Network Experiment</title><link href="http://0.0.0.0:8080/printeger.github.io/blog/2022/3D-Pointcloud-Classification-Network-Experiment/" rel="alternate" type="text/html" title="3D Pointcloud Classification Network Experiment" /><published>2022-05-19T04:00:00+00:00</published><updated>2022-05-19T04:00:00+00:00</updated><id>http://0.0.0.0:8080/printeger.github.io/blog/2022/3D-Pointcloud-Classification-Network-Experiment</id><content type="html" xml:base="http://0.0.0.0:8080/printeger.github.io/blog/2022/3D-Pointcloud-Classification-Network-Experiment/"><![CDATA[<ul>
-  <li><a href="#1-data-format">1. data format</a>
-    <ul>
-      <li><a href="#dataset-shujutang">dataset (shujutang):</a></li>
-      <li><a href="#our_data">our_data</a></li>
-    </ul>
-  </li>
-  <li><a href="#2-experiment-on-our_data">2. Experiment on our_data</a>
-    <ul>
-      <li><a href="#paconv">PAConv</a>
-        <ul>
-          <li><a href="#1-train">1. train:</a></li>
-          <li><a href="#2-test">2. test:</a></li>
-          <li><a href="#3-t7-to-onnx">3. .t7 to .onnx</a></li>
-        </ul>
-      </li>
-      <li><a href="#dgcnn">DGCNN</a>
-        <ul>
-          <li><a href="#train--test">Train \&amp; Test：</a></li>
-          <li><a href="#pytorch---onnx">pytorch -&gt; onnx:</a></li>
-          <li><a href="#onnx--ncnn">onnx → ncnn</a></li>
-          <li><a href="#q--a">Q \&amp; A</a></li>
-          <li><a href="#ncnn-model">ncnn model</a></li>
-          <li><a href="#results">Results</a></li>
-        </ul>
-      </li>
-      <li><a href="#pointhop">PointHop++</a></li>
-      <li><a href="#view-gcn">View-GCN</a></li>
-      <li><a href="#squeezent">squeezent</a>
-        <ul>
-          <li><a href="#q--a-1">Q \&amp; A：</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><a href="#pcd--二维--轮廓图像-">PCD → 二维 → 轮廓图像 ？</a>
-    <ul>
-      <li><a href="#open3d">open3d</a></li>
-    </ul>
-  </li>
-</ul>
-
-<h1 id="1-data-format">1. data format</h1>
-<h2 id="dataset-shujutang">dataset (shujutang):</h2>
-
-<ul>
-  <li>
-    <p>label(1 * 12):</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      - 00000.txt:
-
-        obj_id  truncation  occlusion  abnormal  rotation_y  heading  cen.x  cen.y  cen.z  l  w  h  
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>velodyne:</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        - 00000.bin:   loc.x  loc.y  loc.z  intensity
-</code></pre></div>    </div>
-  </li>
-</ul>
-
-<p>lenet</p>
-
-<p>res net 18</p>
-
-<p>mobile net 123</p>
-
-<h2 id="our_data">our_data</h2>
-
-<ul>
-  <li>
-    <p>pcd_data_train*.hdf5(3 * 600)</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    - label:
-
-     0(ped)  1(bike)  2(car)
-
-   - data:         ped_*.pcd  bike_*.pcd  car_*.pcd
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>pcd_data_test*.hdf5(3 * 400)</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    - label:
-
-     0(ped)  1(bike)  2(car)
-
-   - data:         ped_*.pcd  bike_*.pcd  car_*.pcd
-</code></pre></div>    </div>
-  </li>
-</ul>
-
-<h1 id="2-experiment-on-our_data">2. Experiment on our_data</h1>
-<h2 id="paconv">PAConv</h2>
-
-<ul>
-  <li>modelnet40 1024points * 20</li>
-</ul>
-
-<p><img src="pic/4/1.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/1.png" alt="" /></p>
-
-<ul>
-  <li>
-    <p>inno 10000 points * 30</p>
-  </li>
-  <li>
-    <p>inno 5000 points * 30</p>
-  </li>
-</ul>
-
-<p><img src="pic/4/2.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/2.png" alt="" /></p>
-
-<ul>
-  <li>inno 1024 points * 30</li>
-</ul>
-
-<p><img src="pic/4/3.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/3.png" alt="" /></p>
-
-<blockquote>
-  <p>训练集中模型形状完整，无truck分类，制作训练集</p>
-</blockquote>
-
-<h3 id="1-train">1. train:</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>epoch:350, batch size: 16, test batch size: 8
-</code></pre></div></div>
-
-<p><img src="pic/4/4.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/4.png" alt="" /></p>
-
-<p><img src="pic/4/5.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/5.png" alt="" /></p>
-
-<p><img src="pic/4/6.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/6.png" alt="" /></p>
-
-<p><img src="pic/4/7.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/7.png" alt="" /></p>
-
-<p><img src="pic/4/8.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/8.png" alt="" /></p>
-
-<h3 id="2-test">2. test:</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GPU: tnum_points: 1024, test_batch_size: 16, 
-</code></pre></div></div>
-
-<p><img src="pic/4/9.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/9.png" alt="" /></p>
-
-<p>time cost per pcd(1024 points): 0.007853929 s</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CPU: tnum_points: 1024, test_batch_size: 16, 
-</code></pre></div></div>
-
-<p><img src="pic/4/10.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/10.png" alt="" /></p>
-
-<p>time cost per pcd(1024 points): 0.007833333 s</p>
-
-<h3 id="3-t7-to-onnx">3. .t7 to .onnx</h3>
-
-<blockquote>
-  <p>Q1: 生成.onnx： Missing key(s) in state_dict</p>
-</blockquote>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RuntimeError: Error(s) in loading state_dict for PAConv: Missing key(s) in state_dict: "matrice1", "matrice2", "matrice3”……
-
-Unexpected key(s) in state_dict: "module.matrice1", "module.matrice2", "module.matrice3"……
-</code></pre></div></div>
-
-<p>原因：gpu训练网络参数保存通常是module.<strong>.</strong>作为键，而CPU上带匹配键是model.<strong>.</strong>，这时就要改过来，出现missing。</p>
-
-<p>解决方法：将字典键值中的module.替换掉</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>model.load_state_dict({k.replace('module.', ''): v for k, v in torch.load(model_path).items()})
-</code></pre></div></div>
-
-<p>https://blog.csdn.net/Mr_WHITE2/article/details/108955177#:~:text=Missing%20key%20%28s%29%20in%20state_dict%20%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%EF%BC%9A%20%20,name%20%3D%20%27module.%27%2Bk%20%23%20add%20%60module.%60…%20%E5%9C%A8%E8%AE%AD%E7%BB%83%E7%9A%84%E6%97%B6%E5%80%99%EF%BC%8C%E4%BD%BF%E7%94%A8%E4%BA%86%E5%8D%95%E6%9C%BA%E5%A4%9A%E5%8D%A1%EF%BC%8Cload%20%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%97%B6%E5%80%99%E5%87%BA%E7%8E%B0%E4%BA%86%E9%97%AE%E9%A2%98%EF%BC%8C%E6%90%9C%E7%B4%A2%E4%B9%8B%E5%90%8E%E5%8F%91%E7%8E%B0%EF%BC%8C%E6%98%AF%E5%9B%A0%E4%B8%BA%E5%8D%95%E6%9C%BA%E5%A4%9A%E5%8D%A1%E7%9A%84%E5%8E%9F%E5%9B%A0%E3%80%82</p>
-
-<blockquote>
-  <p>Q2：ONNX export failed: Couldn’t export Python operator AssignScoreWithK</p>
-</blockquote>
-
-<p>不支持Custom Operator，需自行导入onnx中</p>
-
-<p>https://pytorch.org/tutorials/advanced/torch_script_custom_ops.html</p>
-
-<h2 id="dgcnn">DGCNN</h2>
-
-<h3 id="train--test">Train &amp; Test：</h3>
-
-<blockquote>
-  <p>GPU:</p>
-</blockquote>
-
-<p><img src="pic/4/11.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/11.png" alt="" /></p>
-
-<blockquote>
-  <p>CPU:</p>
-</blockquote>
-
-<p><img src="pic/4/12.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/12.png" alt="" /></p>
-
-<h3 id="pytorch---onnx">pytorch -&gt; onnx:</h3>
-
-<p><img src="pic/4/13.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/13.png" alt="" /></p>
-
-<h3 id="onnx--ncnn">onnx → ncnn</h3>
-
-<blockquote>
-  <p>ncnn模型结构：</p>
-</blockquote>
-
-<p>https://github.com/Tencent/ncnn/wiki/param-and-model-file-structure</p>
-
-<p>Simplif onnx model:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install onnx-simplifier
-python -m onnxsim test.onnx gdcnn_simplif.onnx
-</code></pre></div></div>
-
-<p><img src="pic/4/14.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/14.png" alt="" /></p>
-
-<p>onnx-simplifier  无法完全去除</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">TopK</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
-  <span class="c1"># axis=-1
-</span><span class="n">Gather</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
-  <span class="c1"># axis=0
-</span><span class="n">Expand</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
-<span class="n">Tile</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
-<span class="n">TopK</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
-  <span class="c1"># axis=-1
-</span><span class="n">Gather</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
-  <span class="c1"># axis=0
-</span><span class="n">Expand</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
-<span class="n">Tile</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
-<span class="n">TopK</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
-  <span class="c1"># axis=-1
-</span><span class="n">Gather</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
-  <span class="c1"># axis=0
-</span><span class="n">Expand</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
-<span class="n">Tile</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
-<span class="n">TopK</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
-  <span class="c1"># axis=-1
-</span><span class="n">Gather</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
-  <span class="c1"># axis=0
-</span><span class="n">Expand</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
-<span class="n">Tile</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
-</code></pre></div></div>
-<p>https://github.com/Tencent/ncnn/issues/1358</p>
-
-<h3 id="q--a">Q &amp; A</h3>
-<blockquote>
-  <p>Q1: 直接使用含有不完全简化的ncnn模型：layer XYZ not exists or registered</p>
-</blockquote>
-
-<blockquote>
-  <p>A1：.param中直接删除不支持的层。</p>
-</blockquote>
-
-<p>需要修改.param中的layer count，blobs。报错：</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>param is too pld, please regenerate
-</code></pre></div></div>
-
-<blockquote>
-  <p>A2：将不支持op设为noop
-https://github.com/Tencent/ncnn/wiki/FAQ-ncnn-throw-error</p>
-</blockquote>
-
-<p>在load model前添加：</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Noop</span> <span class="p">:</span> <span class="n">public</span> <span class="n">ncnn</span><span class="p">::</span><span class="n">Layer</span> <span class="p">{};</span>
-<span class="n">DEFINE_LAYER_CREATOR</span><span class="p">(</span><span class="n">Noop</span><span class="p">)</span>
-
-<span class="n">net</span><span class="p">.</span><span class="n">register_custom_layer</span><span class="p">(</span><span class="s">"TopK"</span><span class="p">,</span> <span class="n">Noop_layer_creator</span><span class="p">);</span>
-<span class="n">net</span><span class="p">.</span><span class="n">register_custom_layer</span><span class="p">(</span><span class="s">"Gather"</span><span class="p">,</span> <span class="n">Noop_layer_creator</span><span class="p">);</span>
-</code></pre></div></div>
-<blockquote>
-  <p>A3: onnx2ncnn.cpp中将未定义op跳过</p>
-</blockquote>
-
-<blockquote>
-  <p>A4：自定义op</p>
-</blockquote>
-
-<p>https://github.com/Tencent/ncnn/wiki/add-custom-layer.zh#%E5%AE%9A%E4%B9%89%E6%BA%90%E7%A0%81h%E6%96%87%E4%BB%B6srclayerrelu6h</p>
-
-<p>直接从pytorch → ncnn</p>
-
-<p>https://github.com/starimeL/PytorchConverter</p>
-
-<p>pointnet无topk，重新训练</p>
-
-<blockquote>
-  <p>导出成功~</p>
-</blockquote>
-
-<p><img src="pic/4/15.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/15.png" alt="" /></p>
-
-<h3 id="ncnn-model">ncnn model</h3>
-
-<h3 id="results">Results</h3>
-<blockquote>
-  <p>Result: 1 PCD 1024 points</p>
-</blockquote>
-
-<p><img src="pic/4/16.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/16.png" alt="" /></p>
-
-<blockquote>
-  <p>RESULT: 1061 PCD 1024 points car
-    pointnet-opt-fp16</p>
-</blockquote>
-
-<p><img src="pic/4/17.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/17.png" alt="" /></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pointnet_train_2-opt-fp16
-</code></pre></div></div>
-
-<p><img src="pic/4/18.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/18.png" alt="" /></p>
-
-<blockquote>
-  <p>RESULT: 144 PCD 1024 points bike</p>
-</blockquote>
-
-<h2 id="pointhop">PointHop++</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>30ms / pcd
-</code></pre></div></div>
-
-<p><img src="pic/4/19.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/19.png" alt="" /></p>
-
-<blockquote>
-  <p>Q1：KNN, 模型无法转化为onnx</p>
-</blockquote>
-
-<h2 id="view-gcn">View-GCN</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>输入：模型多视图图片（12）。能否使用pcd得到？
-</code></pre></div></div>
-
-<h2 id="squeezent">squeezent</h2>
-
-<p><img src="pic/4/21.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/21.png" alt="" /></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ncnn model &amp; onnx simplifed &amp; innx origin
-</code></pre></div></div>
-
-<h3 id="q--a-1">Q &amp; A：</h3>
-
-<ul>
-  <li>
-    <p>转ncnn后测试结果不正常？TODO: 在原网络中效果？得分计算方式？</p>
-  </li>
-  <li>
-    <p>ncnn中计时函数应选择#include &lt;sys/time.h&gt;</p>
-  </li>
-  <li>
-    <p>图片分类网络计时是否有问题？</p>
-  </li>
-  <li>
-    <p>重新训练点云网络128/1024，gpu/cpu准确率时间</p>
-  </li>
-  <li>
-    <p>转ncnn后准确率下降？</p>
-  </li>
-  <li>
-    <p>caffe点云分类网络</p>
-  </li>
-</ul>
-
-<h1 id="pcd--二维--轮廓图像-">PCD → 二维 → 轮廓图像 ？</h1>
-<h2 id="open3d">open3d</h2>
-
-<p>https://github.com/isl-org/Open3D/issues/1912</p>
-
-<p>open3d 批量导出侧视图：</p>
-
-<p><img src="pic/4/20.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/20.png" alt="" /></p>
-<blockquote>
-  <p>如何自动关闭窗口？DONE</p>
-</blockquote>]]></content><author><name>printeger</name></author><category term="Project" /><category term="Classification" /><category term="LiDAR" /><category term="DeepLearning" /><category term="Classification" /><category term="DeepLearning" /><category term="Experiment" /><summary type="html"><![CDATA[1. data format dataset (shujutang): our_data 2. Experiment on our_data PAConv 1. train: 2. test: 3. .t7 to .onnx DGCNN Train \&amp; Test： pytorch -&gt; onnx: onnx → ncnn Q \&amp; A ncnn model Results PointHop++ View-GCN squeezent Q \&amp; A： PCD → 二维 → 轮廓图像 ？ open3d]]></summary></entry><entry><title type="html">Displaying External Posts on Your al-folio Blog</title><link href="http://0.0.0.0:8080/printeger.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog/" rel="alternate" type="text/html" title="Displaying External Posts on Your al-folio Blog" /><published>2022-04-23T23:20:09+00:00</published><updated>2022-04-23T23:20:09+00:00</updated><id>http://0.0.0.0:8080/printeger.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog</id><content type="html" xml:base="http://0.0.0.0:8080/printeger.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog/"><![CDATA[]]></content><author><name></name></author></entry><entry><title type="html">3D Pointcloud Classification Network Survey</title><link href="http://0.0.0.0:8080/printeger.github.io/blog/2022/3D-Pointcloud-Classification-Network-Survey/" rel="alternate" type="text/html" title="3D Pointcloud Classification Network Survey" /><published>2022-03-29T04:00:00+00:00</published><updated>2022-03-29T04:00:00+00:00</updated><id>http://0.0.0.0:8080/printeger.github.io/blog/2022/3D-Pointcloud-Classification-Network-Survey</id><content type="html" xml:base="http://0.0.0.0:8080/printeger.github.io/blog/2022/3D-Pointcloud-Classification-Network-Survey/"><![CDATA[<ul>
-  <li><a href="#3d-point-cloud">3D Point Cloud</a>
-    <ul>
-      <li><a href="#3d-shape-classification">3D shape classification</a></li>
-      <li><a href="#3d-object-detection-and-tracking">3D object detection and tracking</a>
-        <ul>
-          <li><a href="#1-region-proposal-based-">1. Region Proposal-based :</a>
-            <ul>
-              <li><a href="#multi-view-based-慢">multi-view based: 慢</a></li>
-              <li><a href="#segmentation-basedstdfpointpaintingpointrgcn">segmentation-based：STD（F）/PointPainting/PointRGCN</a></li>
-              <li><a href="#frustum-based--f-convnet">frustum-based : F-ConvNet</a></li>
-            </ul>
-          </li>
-          <li><a href="#2-single-shot-methods-">2. Single Shot Methods :</a>
-            <ul>
-              <li><a href="#bev-based">BEV-based</a></li>
-              <li><a href="#discretization-based--3dbnsa-ssd">Discretization-based : 3DBN/SA-SSD/</a></li>
-              <li><a href="#point-based-methods--3dssd">Point-based Methods : 3DSSD</a></li>
-              <li><a href="#other--lasernetlasernet">other ： LaserNet/Lasernet++</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><a href="#3d-point-cloud-segmentation">3D point cloud segmentation</a></li>
-      <li><a href="#grid-gcnn">Grid-GCNN</a></li>
-      <li><a href="#ldg-cnn">LDG CNN</a></li>
-      <li><a href="#pointweb">PointWeb</a></li>
-      <li><a href="#pointconv">pointconv</a></li>
-      <li><a href="#paconv">PAConv</a></li>
-      <li><a href="#pointview-gcn">PointView-GCN</a></li>
-    </ul>
-  </li>
-</ul>
-
-<h1 id="3d-point-cloud">3D Point Cloud</h1>
-
-<p>3D shape classification
- 3D object detection and tracking
- 3D point cloud segmentation</p>
-
-<p><img src="pic/3136.png" alt="" /></p>
-
-<p><img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/3136.png" alt="" /></p>
-
-<p>## 3D shape classification</p>
-
-<p><img src="pic/3341.png" alt="" /></p>
-
-<p><img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/3341.png" alt="" /></p>
-
-<p>PointNet</p>
-
-<h2 id="3d-object-detection-and-tracking">3D object detection and tracking</h2>
-
-<p><img src="pic/3431.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/3431.png" alt="" /></p>
-<h3 id="1-region-proposal-based-">1. Region Proposal-based :</h3>
-<ul>
-  <li>提出几个可能的包含对象的区域，然后提取区域特征以确定每个提议的类别标签。</li>
-</ul>
-
-<h4 id="multi-view-based-慢">multi-view based: 慢</h4>
-<ul>
-  <li>
-    <p>从 BEV 图生成一组高度准确的 3D 候选框，并将它们投影到多个视图的特征图（例如，LiDAR 前视图图像、RGB 图像）。然后他们结合来自不同视图的这些区域特征来预测定向的 3D 边界框.</p>
-  </li>
-  <li>
-    <p>RT3D使用了预 RoI 池化卷积来提高MV3D 的效率。具体来说，他们将大部分卷积操作移到了 RoI 池化模块之前。因此，对所有对象建议执行一次 RoI 卷积。实验结果表明，该方法可以以 11.1 fps 的速度运行，比 MV3D 快 5 倍。</p>
-  </li>
-</ul>
-
-<h4 id="segmentation-basedstdfpointpaintingpointrgcn">segmentation-based：STD（F）/PointPainting/PointRGCN</h4>
-<ul>
-  <li>语义分割技术去除大部分背景点，在前景点上生成大量高质量的提议以节省计算量，如图 8(b) 所示。与multi-view based相比，这些方法实现了更高的对象召回率，更适用于具有高度遮挡和拥挤对象的复杂场景。
-    <h4 id="frustum-based--f-convnet">frustum-based : F-ConvNet</h4>
-  </li>
-  <li>leverage existing 2D object detectors to generate 2D candidate regions of objects and then extract a 3D frustum proposal for each 2D candidate region. 受到 2D object detectors的限制。</li>
-</ul>
-
-<p><img src="pic/1747.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/1747.png" alt="" /></p>
-
-<h3 id="2-single-shot-methods-">2. Single Shot Methods :</h3>
-<ul>
-  <li>directly predict class probabilities and regress 3D bounding boxes of objects using a single-stage network. They do not need region proposal generation and post-processing.</li>
-  <li>fast
-    <h4 id="bev-based">BEV-based</h4>
-  </li>
-</ul>
-
-<h4 id="discretization-based--3dbnsa-ssd">Discretization-based : 3DBN/SA-SSD/</h4>
-<ul>
-  <li>convert a point cloud into a regular discrete representation, and then apply CNN to predict both categories and 3D boxes of objects.</li>
-</ul>
-
-<h4 id="point-based-methods--3dssd">Point-based Methods : 3DSSD</h4>
-<ul>
-  <li>直接以原始点云为输入</li>
-</ul>
-
-<h4 id="other--lasernetlasernet">other ： LaserNet/Lasernet++</h4>
-
-<h2 id="3d-point-cloud-segmentation">3D point cloud segmentation</h2>
-<p><img src="pic/3530.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/3530.png" alt="" /></p>
-
-<hr />
-<h2 id="grid-gcnn">Grid-GCNN</h2>
-
-<h2 id="ldg-cnn">LDG CNN</h2>
-
-<p><img src="pic/0608.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/0608.png" alt="" />
-<img src="pic/0340.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/0340.png" alt="" /></p>
-<h2 id="pointweb">PointWeb</h2>
-<ul>
-  <li>detection</li>
-  <li>acc not good</li>
-</ul>
-
-<p><img src="pic/0731.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/0731.png" alt="" />
-<img src="pic/1500.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/1500.png" alt="" /></p>
-<h2 id="pointconv">pointconv</h2>
-<p>1000 points&lt;9.9ms</p>
-
-<p><img src="pic/2504.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/2504.png" alt="" /></p>
-<h2 id="paconv">PAConv</h2>
-<p>batch size = 16 
-0.118s / batch
-7ms / 1w points
-acc : 0.935981</p>
-
-<p><img src="pic/4648.png" alt="" />
-<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4648.png" alt="" /></p>
-<h2 id="pointview-gcn">PointView-GCN</h2>]]></content><author><name>printeger</name></author><category term="Project" /><category term="Classification" /><category term="LiDAR" /><category term="DeepLearning" /><category term="Classification" /><category term="DeepLearning" /><category term="Overview" /><summary type="html"><![CDATA[3D Point Cloud 3D shape classification 3D object detection and tracking 1. Region Proposal-based : multi-view based: 慢 segmentation-based：STD（F）/PointPainting/PointRGCN frustum-based : F-ConvNet 2. Single Shot Methods : BEV-based Discretization-based : 3DBN/SA-SSD/ Point-based Methods : 3DSSD other ： LaserNet/Lasernet++ 3D point cloud segmentation Grid-GCNN LDG CNN PointWeb pointconv PAConv PointView-GCN]]></summary></entry><entry><title type="html">TEST</title><link href="http://0.0.0.0:8080/printeger.github.io/blog/2022/test/" rel="alternate" type="text/html" title="TEST" /><published>2022-03-29T04:00:00+00:00</published><updated>2022-03-29T04:00:00+00:00</updated><id>http://0.0.0.0:8080/printeger.github.io/blog/2022/test</id><content type="html" xml:base="http://0.0.0.0:8080/printeger.github.io/blog/2022/test/"><![CDATA[<p>123456
-sadsfsgw3qg</p>]]></content><author><name>printeger</name></author><category term="Project" /><category term="Classification" /><category term="LiDAR" /><category term="DeepLearning" /><category term="Classification" /><category term="DeepLearning" /><category term="Overview" /><summary type="html"><![CDATA[123456 sadsfsgw3qg]]></summary></entry></feed>
+Follow the instructions in the Jekyll Docs to complete the installation of Ruby, RubyGems, Jekyll, and Bundler. In addition, Git is also required to be installed.
+
+Installation
+
+Creating a New Site
+
+There are two ways to create a new repository for this theme:
+
+
+  Using the Chirpy Starter - Easy to upgrade, isolates irrelevant project files so you can focus on writing.
+  Forking ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Writing a New Post</title>
+    <link href="http://localhost:4000/posts/write-a-new-post/" rel="alternate" type="text/html" title="Writing a New Post" />
+    <published>2019-08-08T14:10:00+08:00</published>
+  
+    <updated>2019-08-08T14:10:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/write-a-new-post/</id>
+    <content src="http://localhost:4000/posts/write-a-new-post/" />
+    <author>
+      <name>cotes</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Tutorial" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.
+
+Naming and Path
+
+Create a new file named YYYY-MM-DD-TITLE.EXTENSION and put it in the _posts of the root directory. Please note that the EXTENSION must be one of md and markdown. If you want to save time of cre...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Text and Typography</title>
+    <link href="http://localhost:4000/posts/text-and-typography/" rel="alternate" type="text/html" title="Text and Typography" />
+    <published>2019-08-08T11:33:00+08:00</published>
+  
+    <updated>2019-08-08T11:33:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/text-and-typography/</id>
+    <content src="http://localhost:4000/posts/text-and-typography/" />
+    <author>
+      <name>cotes</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Demo" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      This post is to show Markdown syntax rendering on Chirpy, you can also use it as an example of writing. Now, let’s start looking at text and typography.
+
+Titles
+
+H1 - heading
+
+H2 - heading
+
+H3 - heading
+
+H4 - heading
+
+
+Paragraph
+
+Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas interdum malesuada egestas. Duis consectetur porta risus, sit amet vulputate urna facilisi...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
