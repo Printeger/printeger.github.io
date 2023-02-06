@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<ul>
+  <li>
+<a href="#1-data-format">1. data format</a>
+    <ul>
+      <li><a href="#dataset-shujutang">dataset (shujutang):</a></li>
+      <li><a href="#our_data">our_data</a></li>
+    </ul>
+  </li>
+  <li>
+<a href="#2-experiment-on-our_data">2. Experiment on our_data</a>
+    <ul>
+      <li>
+<a href="#paconv">PAConv</a>
+        <ul>
+          <li><a href="#1-train">1. train:</a></li>
+          <li><a href="#2-test">2. test:</a></li>
+          <li><a href="#3-t7-to-onnx">3. .t7 to .onnx</a></li>
+        </ul>
+      </li>
+      <li>
+<a href="#dgcnn">DGCNN</a>
+        <ul>
+          <li><a href="#train--test">Train \&amp; Test：</a></li>
+          <li><a href="#pytorch---onnx">pytorch -&gt; onnx:</a></li>
+          <li><a href="#onnx--ncnn">onnx → ncnn</a></li>
+          <li><a href="#q--a">Q \&amp; A</a></li>
+          <li><a href="#ncnn-model">ncnn model</a></li>
+          <li><a href="#results">Results</a></li>
+        </ul>
+      </li>
+      <li><a href="#pointhop">PointHop++</a></li>
+      <li><a href="#view-gcn">View-GCN</a></li>
+      <li>
+<a href="#squeezent">squeezent</a>
+        <ul>
+          <li><a href="#q--a-1">Q \&amp; A：</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+<a href="#pcd--%E4%BA%8C%E7%BB%B4--%E8%BD%AE%E5%BB%93%E5%9B%BE%E5%83%8F-">PCD → 二维 → 轮廓图像 ？</a>
+    <ul>
+      <li><a href="#open3d">open3d</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="1-data-format">1. data format</h1>
+<h2 id="dataset-shujutang">dataset (shujutang):</h2>
+
+<ul>
+  <li>
+    <p>label(1 * 12):</p>
+
+    <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>      - 00000.txt:
+
+        obj_id  truncation  occlusion  abnormal  rotation_y  heading  cen.x  cen.y  cen.z  l  w  h  
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>velodyne:</p>
+
+    <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>        - 00000.bin:   loc.x  loc.y  loc.z  intensity
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>lenet</p>
+
+<p>res net 18</p>
+
+<p>mobile net 123</p>
+
+<h2 id="our_data">our_data</h2>
+
+<ul>
+  <li>
+    <p>pcd_data_train*.hdf5(3 * 600)</p>
+
+    <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>    - label:
+
+     0(ped)  1(bike)  2(car)
+
+   - data:         ped_*.pcd  bike_*.pcd  car_*.pcd
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>pcd_data_test*.hdf5(3 * 400)</p>
+
+    <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>    - label:
+
+     0(ped)  1(bike)  2(car)
+
+   - data:         ped_*.pcd  bike_*.pcd  car_*.pcd
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h1 id="2-experiment-on-our_data">2. Experiment on our_data</h1>
+<h2 id="paconv">PAConv</h2>
+
+<ul>
+  <li>modelnet40 1024points * 20</li>
+</ul>
+
+<p><img src="pic/4/1.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/1.png" alt=""></p>
+
+<ul>
+  <li>
+    <p>inno 10000 points * 30</p>
+  </li>
+  <li>
+    <p>inno 5000 points * 30</p>
+  </li>
+</ul>
+
+<p><img src="pic/4/2.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/2.png" alt=""></p>
+
+<ul>
+  <li>inno 1024 points * 30</li>
+</ul>
+
+<p><img src="pic/4/3.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/3.png" alt=""></p>
+
+<blockquote>
+  <p>训练集中模型形状完整，无truck分类，制作训练集</p>
+</blockquote>
+
+<h3 id="1-train">1. train:</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>epoch:350, batch size: 16, test batch size: 8
+</code></pre></div></div>
+
+<p><img src="pic/4/4.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/4.png" alt=""></p>
+
+<p><img src="pic/4/5.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/5.png" alt=""></p>
+
+<p><img src="pic/4/6.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/6.png" alt=""></p>
+
+<p><img src="pic/4/7.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/7.png" alt=""></p>
+
+<p><img src="pic/4/8.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/8.png" alt=""></p>
+
+<h3 id="2-test">2. test:</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GPU: tnum_points: 1024, test_batch_size: 16, 
+</code></pre></div></div>
+
+<p><img src="pic/4/9.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/9.png" alt=""></p>
+
+<p>time cost per pcd(1024 points): 0.007853929 s</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CPU: tnum_points: 1024, test_batch_size: 16, 
+</code></pre></div></div>
+
+<p><img src="pic/4/10.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/10.png" alt=""></p>
+
+<p>time cost per pcd(1024 points): 0.007833333 s</p>
+
+<h3 id="3-t7-to-onnx">3. .t7 to .onnx</h3>
+
+<blockquote>
+  <p>Q1: 生成.onnx： Missing key(s) in state_dict</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RuntimeError: Error(s) in loading state_dict for PAConv: Missing key(s) in state_dict: "matrice1", "matrice2", "matrice3”……
+
+Unexpected key(s) in state_dict: "module.matrice1", "module.matrice2", "module.matrice3"……
+</code></pre></div></div>
+
+<p>原因：gpu训练网络参数保存通常是module.<strong>.</strong>作为键，而CPU上带匹配键是model.<strong>.</strong>，这时就要改过来，出现missing。</p>
+
+<p>解决方法：将字典键值中的module.替换掉</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>model.load_state_dict({k.replace('module.', ''): v for k, v in torch.load(model_path).items()})
+</code></pre></div></div>
+
+<p>https://blog.csdn.net/Mr_WHITE2/article/details/108955177#:~:text=Missing%20key%20%28s%29%20in%20state_dict%20%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%EF%BC%9A%20%20,name%20%3D%20%27module.%27%2Bk%20%23%20add%20%60module.%60…%20%E5%9C%A8%E8%AE%AD%E7%BB%83%E7%9A%84%E6%97%B6%E5%80%99%EF%BC%8C%E4%BD%BF%E7%94%A8%E4%BA%86%E5%8D%95%E6%9C%BA%E5%A4%9A%E5%8D%A1%EF%BC%8Cload%20%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%97%B6%E5%80%99%E5%87%BA%E7%8E%B0%E4%BA%86%E9%97%AE%E9%A2%98%EF%BC%8C%E6%90%9C%E7%B4%A2%E4%B9%8B%E5%90%8E%E5%8F%91%E7%8E%B0%EF%BC%8C%E6%98%AF%E5%9B%A0%E4%B8%BA%E5%8D%95%E6%9C%BA%E5%A4%9A%E5%8D%A1%E7%9A%84%E5%8E%9F%E5%9B%A0%E3%80%82</p>
+
+<blockquote>
+  <p>Q2：ONNX export failed: Couldn’t export Python operator AssignScoreWithK</p>
+</blockquote>
+
+<p>不支持Custom Operator，需自行导入onnx中</p>
+
+<p>https://pytorch.org/tutorials/advanced/torch_script_custom_ops.html</p>
+
+<h2 id="dgcnn">DGCNN</h2>
+
+<h3 id="train--test">Train &amp; Test：</h3>
+
+<blockquote>
+  <p>GPU:</p>
+</blockquote>
+
+<p><img src="pic/4/11.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/11.png" alt=""></p>
+
+<blockquote>
+  <p>CPU:</p>
+</blockquote>
+
+<p><img src="pic/4/12.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/12.png" alt=""></p>
+
+<h3 id="pytorch---onnx">pytorch -&gt; onnx:</h3>
+
+<p><img src="pic/4/13.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/13.png" alt=""></p>
+
+<h3 id="onnx--ncnn">onnx → ncnn</h3>
+
+<blockquote>
+  <p>ncnn模型结构：</p>
+</blockquote>
+
+<p>https://github.com/Tencent/ncnn/wiki/param-and-model-file-structure</p>
+
+<p>Simplif onnx model:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install onnx-simplifier
+python -m onnxsim test.onnx gdcnn_simplif.onnx
+</code></pre></div></div>
+
+<p><img src="pic/4/14.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/14.png" alt=""></p>
+
+<p>onnx-simplifier  无法完全去除</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">TopK</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
+  <span class="c1"># axis=-1
+</span><span class="n">Gather</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
+  <span class="c1"># axis=0
+</span><span class="n">Expand</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
+<span class="n">Tile</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
+<span class="n">TopK</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
+  <span class="c1"># axis=-1
+</span><span class="n">Gather</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
+  <span class="c1"># axis=0
+</span><span class="n">Expand</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
+<span class="n">Tile</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
+<span class="n">TopK</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
+  <span class="c1"># axis=-1
+</span><span class="n">Gather</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
+  <span class="c1"># axis=0
+</span><span class="n">Expand</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
+<span class="n">Tile</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
+<span class="n">TopK</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
+  <span class="c1"># axis=-1
+</span><span class="n">Gather</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
+  <span class="c1"># axis=0
+</span><span class="n">Expand</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
+<span class="n">Tile</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">yet</span><span class="err">!</span>
+</code></pre></div></div>
+<p>https://github.com/Tencent/ncnn/issues/1358</p>
+
+<h3 id="q--a">Q &amp; A</h3>
+<blockquote>
+  <p>Q1: 直接使用含有不完全简化的ncnn模型：layer XYZ not exists or registered</p>
+</blockquote>
+
+<blockquote>
+  <p>A1：.param中直接删除不支持的层。</p>
+</blockquote>
+
+<p>需要修改.param中的layer count，blobs。报错：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>param is too pld, please regenerate
+</code></pre></div></div>
+
+<blockquote>
+  <p>A2：将不支持op设为noop
+https://github.com/Tencent/ncnn/wiki/FAQ-ncnn-throw-error</p>
+</blockquote>
+
+<p>在load model前添加：</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Noop</span> <span class="p">:</span> <span class="n">public</span> <span class="n">ncnn</span><span class="p">::</span><span class="n">Layer</span> <span class="p">{};</span>
+<span class="n">DEFINE_LAYER_CREATOR</span><span class="p">(</span><span class="n">Noop</span><span class="p">)</span>
+
+<span class="n">net</span><span class="p">.</span><span class="n">register_custom_layer</span><span class="p">(</span><span class="s">"TopK"</span><span class="p">,</span> <span class="n">Noop_layer_creator</span><span class="p">);</span>
+<span class="n">net</span><span class="p">.</span><span class="n">register_custom_layer</span><span class="p">(</span><span class="s">"Gather"</span><span class="p">,</span> <span class="n">Noop_layer_creator</span><span class="p">);</span>
+</code></pre></div></div>
+<blockquote>
+  <p>A3: onnx2ncnn.cpp中将未定义op跳过</p>
+</blockquote>
+
+<blockquote>
+  <p>A4：自定义op</p>
+</blockquote>
+
+<p>https://github.com/Tencent/ncnn/wiki/add-custom-layer.zh#%E5%AE%9A%E4%B9%89%E6%BA%90%E7%A0%81h%E6%96%87%E4%BB%B6srclayerrelu6h</p>
+
+<p>直接从pytorch → ncnn</p>
+
+<p>https://github.com/starimeL/PytorchConverter</p>
+
+<p>pointnet无topk，重新训练</p>
+
+<blockquote>
+  <p>导出成功~</p>
+</blockquote>
+
+<p><img src="pic/4/15.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/15.png" alt=""></p>
+
+<h3 id="ncnn-model">ncnn model</h3>
+
+<h3 id="results">Results</h3>
+<blockquote>
+  <p>Result: 1 PCD 1024 points</p>
+</blockquote>
+
+<p><img src="pic/4/16.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/16.png" alt=""></p>
+
+<blockquote>
+  <p>RESULT: 1061 PCD 1024 points car
+    pointnet-opt-fp16</p>
+</blockquote>
+
+<p><img src="pic/4/17.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/17.png" alt=""></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pointnet_train_2-opt-fp16
+</code></pre></div></div>
+
+<p><img src="pic/4/18.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/18.png" alt=""></p>
+
+<blockquote>
+  <p>RESULT: 144 PCD 1024 points bike</p>
+</blockquote>
+
+<h2 id="pointhop">PointHop++</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>30ms / pcd
+</code></pre></div></div>
+
+<p><img src="pic/4/19.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/19.png" alt=""></p>
+
+<blockquote>
+  <p>Q1：KNN, 模型无法转化为onnx</p>
+</blockquote>
+
+<h2 id="view-gcn">View-GCN</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>输入：模型多视图图片（12）。能否使用pcd得到？
+</code></pre></div></div>
+
+<h2 id="squeezent">squeezent</h2>
+
+<p><img src="pic/4/21.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/21.png" alt=""></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ncnn model &amp; onnx simplifed &amp; innx origin
+</code></pre></div></div>
+
+<h3 id="q--a-1">Q &amp; A：</h3>
+
+<ul>
+  <li>
+    <p>转ncnn后测试结果不正常？TODO: 在原网络中效果？得分计算方式？</p>
+  </li>
+  <li>
+    <p>ncnn中计时函数应选择#include &lt;sys/time.h&gt;</p>
+  </li>
+  <li>
+    <p>图片分类网络计时是否有问题？</p>
+  </li>
+  <li>
+    <p>重新训练点云网络128/1024，gpu/cpu准确率时间</p>
+  </li>
+  <li>
+    <p>转ncnn后准确率下降？</p>
+  </li>
+  <li>
+    <p>caffe点云分类网络</p>
+  </li>
+</ul>
+
+<h1 id="pcd--二维--轮廓图像-">PCD → 二维 → 轮廓图像 ？</h1>
+<h2 id="open3d">open3d</h2>
+
+<p>https://github.com/isl-org/Open3D/issues/1912</p>
+
+<p>open3d 批量导出侧视图：</p>
+
+<p><img src="pic/4/20.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4/20.png" alt=""></p>
+<blockquote>
+  <p>如何自动关闭窗口？DONE</p>
+</blockquote>
+
+</body></html>

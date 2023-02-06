@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<ul>
+  <li>
+<a href="#3d-point-cloud">3D Point Cloud</a>
+    <ul>
+      <li><a href="#3d-shape-classification">3D shape classification</a></li>
+      <li>
+<a href="#3d-object-detection-and-tracking">3D object detection and tracking</a>
+        <ul>
+          <li>
+<a href="#1-region-proposal-based-">1. Region Proposal-based :</a>
+            <ul>
+              <li><a href="#multi-view-based-%E6%85%A2">multi-view based: 慢</a></li>
+              <li><a href="#segmentation-basedstdfpointpaintingpointrgcn">segmentation-based：STD（F）/PointPainting/PointRGCN</a></li>
+              <li><a href="#frustum-based--f-convnet">frustum-based : F-ConvNet</a></li>
+            </ul>
+          </li>
+          <li>
+<a href="#2-single-shot-methods-">2. Single Shot Methods :</a>
+            <ul>
+              <li><a href="#bev-based">BEV-based</a></li>
+              <li><a href="#discretization-based--3dbnsa-ssd">Discretization-based : 3DBN/SA-SSD/</a></li>
+              <li><a href="#point-based-methods--3dssd">Point-based Methods : 3DSSD</a></li>
+              <li><a href="#other--lasernetlasernet">other ： LaserNet/Lasernet++</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#3d-point-cloud-segmentation">3D point cloud segmentation</a></li>
+      <li><a href="#grid-gcnn">Grid-GCNN</a></li>
+      <li><a href="#ldg-cnn">LDG CNN</a></li>
+      <li><a href="#pointweb">PointWeb</a></li>
+      <li><a href="#pointconv">pointconv</a></li>
+      <li><a href="#paconv">PAConv</a></li>
+      <li><a href="#pointview-gcn">PointView-GCN</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="3d-point-cloud">3D Point Cloud</h1>
+
+<p>3D shape classification
+ 3D object detection and tracking
+ 3D point cloud segmentation</p>
+
+<p><img src="pic/3136.png" alt=""></p>
+
+<p><img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/3136.png" alt=""></p>
+
+<p>## 3D shape classification</p>
+
+<p><img src="pic/3341.png" alt=""></p>
+
+<p><img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/3341.png" alt=""></p>
+
+<p>PointNet</p>
+
+<h2 id="3d-object-detection-and-tracking">3D object detection and tracking</h2>
+
+<p><img src="pic/3431.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/3431.png" alt=""></p>
+<h3 id="1-region-proposal-based-">1. Region Proposal-based :</h3>
+<ul>
+  <li>提出几个可能的包含对象的区域，然后提取区域特征以确定每个提议的类别标签。</li>
+</ul>
+
+<h4 id="multi-view-based-慢">multi-view based: 慢</h4>
+<ul>
+  <li>
+    <p>从 BEV 图生成一组高度准确的 3D 候选框，并将它们投影到多个视图的特征图（例如，LiDAR 前视图图像、RGB 图像）。然后他们结合来自不同视图的这些区域特征来预测定向的 3D 边界框.</p>
+  </li>
+  <li>
+    <p>RT3D使用了预 RoI 池化卷积来提高MV3D 的效率。具体来说，他们将大部分卷积操作移到了 RoI 池化模块之前。因此，对所有对象建议执行一次 RoI 卷积。实验结果表明，该方法可以以 11.1 fps 的速度运行，比 MV3D 快 5 倍。</p>
+  </li>
+</ul>
+
+<h4 id="segmentation-basedstdfpointpaintingpointrgcn">segmentation-based：STD（F）/PointPainting/PointRGCN</h4>
+<ul>
+  <li>语义分割技术去除大部分背景点，在前景点上生成大量高质量的提议以节省计算量，如图 8(b) 所示。与multi-view based相比，这些方法实现了更高的对象召回率，更适用于具有高度遮挡和拥挤对象的复杂场景。
+    <h4 id="frustum-based--f-convnet">frustum-based : F-ConvNet</h4>
+  </li>
+  <li>leverage existing 2D object detectors to generate 2D candidate regions of objects and then extract a 3D frustum proposal for each 2D candidate region. 受到 2D object detectors的限制。</li>
+</ul>
+
+<p><img src="pic/1747.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/1747.png" alt=""></p>
+
+<h3 id="2-single-shot-methods-">2. Single Shot Methods :</h3>
+<ul>
+  <li>directly predict class probabilities and regress 3D bounding boxes of objects using a single-stage network. They do not need region proposal generation and post-processing.</li>
+  <li>fast
+    <h4 id="bev-based">BEV-based</h4>
+  </li>
+</ul>
+
+<h4 id="discretization-based--3dbnsa-ssd">Discretization-based : 3DBN/SA-SSD/</h4>
+<ul>
+  <li>convert a point cloud into a regular discrete representation, and then apply CNN to predict both categories and 3D boxes of objects.</li>
+</ul>
+
+<h4 id="point-based-methods--3dssd">Point-based Methods : 3DSSD</h4>
+<ul>
+  <li>直接以原始点云为输入</li>
+</ul>
+
+<h4 id="other--lasernetlasernet">other ： LaserNet/Lasernet++</h4>
+
+<h2 id="3d-point-cloud-segmentation">3D point cloud segmentation</h2>
+<p><img src="pic/3530.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/3530.png" alt=""></p>
+
+<hr>
+<h2 id="grid-gcnn">Grid-GCNN</h2>
+
+<h2 id="ldg-cnn">LDG CNN</h2>
+
+<p><img src="pic/0608.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/0608.png" alt="">
+<img src="pic/0340.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/0340.png" alt=""></p>
+<h2 id="pointweb">PointWeb</h2>
+<ul>
+  <li>detection</li>
+  <li>acc not good</li>
+</ul>
+
+<p><img src="pic/0731.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/0731.png" alt="">
+<img src="pic/1500.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/1500.png" alt=""></p>
+<h2 id="pointconv">pointconv</h2>
+<p>1000 points&lt;9.9ms</p>
+
+<p><img src="pic/2504.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/2504.png" alt=""></p>
+<h2 id="paconv">PAConv</h2>
+<p>batch size = 16 
+0.118s / batch
+7ms / 1w points
+acc : 0.935981</p>
+
+<p><img src="pic/4648.png" alt="">
+<img src="https://github.com/Printeger/printeger.github.io/raw/main/_posts/pic/4648.png" alt=""></p>
+<h2 id="pointview-gcn">PointView-GCN</h2>
+</body></html>
