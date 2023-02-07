@@ -275,11 +275,12 @@ LEGO LOAM中把一帧分为6份应该也是分段线性的思想），分段线�
 ![](pic/8/555.gif)
 ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/555.gif)
 
-![](pic/8/12.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/12.png)
-
-![](pic/8/13.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/13.png)
+<center>
+<figure>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/12.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/13.png"  width="250px" >
+</figure>
+</center>
 
 ## 4.3 使用里程计补偿与IMU数据补偿对比
 | case0 | case 1 | case 2 | case 3 |
@@ -290,14 +291,13 @@ LEGO LOAM中把一帧分为6份应该也是分段线性的思想），分段线�
 
 ### 4.3.1 Traj Compare
 
-![](pic/8/14.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/14.png)
-
-![](pic/8/15.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/15.png)
-
-![](pic/8/16.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/16.png)
+<center>
+<figure>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/14.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/15.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/16.png"  width="250px" >
+</figure>
+</center>
 
 ### 4.3.2 APE/RPE Compare
 

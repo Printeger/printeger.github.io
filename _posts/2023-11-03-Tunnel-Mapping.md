@@ -68,14 +68,13 @@ mermaid: true
 
 - [ ] 轨迹长度符合真实情况，用作后续比较的**ground truth**
 
-![](pic/9/4.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/4.png)
-
-![](pic/9/5.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/5.png)
-
-![](pic/9/6.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/6.png)
+<center>
+<figure>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/4.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/5.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/6.png"  width="250px" >
+</figure>
+</center>
 
 # 2. Feature based SLAM
 
@@ -117,14 +116,13 @@ mermaid: true
 
 在长直道难以估计出位姿
 
-![](pic/9/12.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/12.png)
-
-![](pic/9/13.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/13.png)
-
-![](pic/9/14.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/14.png)
+<center>
+<figure>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/12.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/13.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/14.png"  width="250px" >
+</figure>
+</center>
 
 ## 3.2 使用特征匹配：
 
@@ -138,20 +136,13 @@ mermaid: true
 
 - [ ] 1100m vs 3200m
 
-![](pic/9/15.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/15.png)
-
-![](pic/9/16.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/16.png)
-
-![](pic/9/17.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/17.png)
-
-
-
-
-
-
+<center>
+<figure>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/15.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/16.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/17.png"  width="250px" >
+</figure>
+</center>
 
 # 4. FEATURE EXTRACTION（11.25）
 
@@ -306,14 +297,13 @@ infos:	2003 poses, 2833.535m path length
 
 - [ ] ROLL角变化趋势偏离GT较大，末段偏离5度左右。PITCH和YAW角基本吻合GT变化趋势。
 
-![](pic/9/30.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/30.png)
-
-![](pic/9/31.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/31.png)
-
-![](pic/9/32.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/32.png)
+<center>
+<figure>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/30.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/31.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/32.png"  width="250px" >
+</figure>
+</center>
 
 - [ ] 运动补偿能带来相对更准确的相对位姿。
 
