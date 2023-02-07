@@ -94,14 +94,15 @@ mermaid: true
 <center>
 <figure>
 
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/8.png"  width="200px" >
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/9.png"  width="200px" >
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/10.png"  width="200px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/8.png"  width="300px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/9.png"  width="300px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/10.png"  width="300px" >
 
 </figure>
 </center>
 
-![](pic/9/8.png)
+![](pic/9/8.png=50x50)![](pic/9/9.png=50x50)![](pic/9/10.png=50x50)
+
 ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/8.png)
 
 ![](pic/9/9.png)
