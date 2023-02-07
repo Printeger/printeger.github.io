@@ -184,7 +184,7 @@ mermaid: true
 
 - [ ] find unground: 94.9289ms
 
-- [ ] Pillar: [906 | 0] Beam: [1482 | 0] Facade: [365 | 0] Roof: [16 | 0] Vertex: [1402].
+- [ ] Pillar: [906 / 0] Beam: [1482 / 0] Facade: [365 / 0] Roof: [16 / 0] Vertex: [1402]
 
 - [ ] 匹配效果见下节。
 
@@ -228,9 +228,10 @@ mermaid: true
 ![](pic/9/24.png)
 ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/24.png)
 
-  TRANSLATION:  1.8917817372525866 -0.3589180073315425 -0.1240118893990635ROTATION:  -0.582874110838635 -0.17952369378155364 0.8506732502603874
-
-  GT: 1.60161103005521 -0.03901633154600859 0.003720984378560388
+> TRANSLATION:  1.8917817372525866 -0.3589180073315425 -0.1240118893990635
+> ROTATION:  -0.582874110838635 -0.17952369378155364 0.8506732502603874
+>
+> GT: 1.60161103005521 -0.03901633154600859 0.003720984378560388
 
 ## 4.2 特征匹配效果测试
 
@@ -239,7 +240,7 @@ mermaid: true
 
 > ROTATION:  0.10026415229906012 -0.037789288636643104 0.028922883060923277
 > TRANSFORM:  -0.0022341084174282697 -0.020622324293664538 -0.009246697937472887
-> 
+
 ![](pic/9/25.png)
 ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/25.png)
 ### beam
@@ -284,6 +285,7 @@ mermaid: true
 ## 5.2 OVERVIEW
 
 - [ ] 新特征对位姿的效果有较大提升，推断出的隧道长度2.83km大概接近隧道长度3.22km。
+
 ```
 name:	GROUND TRUTH
 infos:	2008 poses, 3222.735m path length
