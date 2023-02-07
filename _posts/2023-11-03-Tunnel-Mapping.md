@@ -93,25 +93,19 @@ mermaid: true
 - [ ] 进入隧道后一段距离可以跟踪建图，重复特征较多时，难以获得有效特征匹配，无法得到有效pose。
 <center>
 <figure>
-
 <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/8.png"  width="300px" >
 <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/9.png"  width="300px" >
 <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/10.png"  width="300px" >
-
 </figure>
 </center>
 
-![](pic/9/8.png=50x50)![](pic/9/9.png=50x50)![](pic/9/10.png=50x50)
-
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/8.png)
-
-![](pic/9/9.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/9.png)
-
-![](pic/9/10.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/10.png)
-
-
+<center>
+<figure>
+<img src="pic/9/8.png"  width="300px" >
+<img src="pic/9/9.png"  width="300px" >
+<img src="pic/9/10.png"  width="300px" >
+</figure>
+</center>
 
 # 3. Lidar-IMU SLAM
 
