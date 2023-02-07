@@ -94,9 +94,9 @@ mermaid: true
 <center>
 <figure>
 
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/8.png">
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/9.png">
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/10.png">
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/8.png"  width="200px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/9.png"  width="200px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/10.png"  width="200px" >
 
 </figure>
 </center>
