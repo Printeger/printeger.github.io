@@ -91,6 +91,15 @@ mermaid: true
 - [ ] 700m vs 3200m
 
 - [ ] 进入隧道后一段距离可以跟踪建图，重复特征较多时，难以获得有效特征匹配，无法得到有效pose。
+<center>
+<figure>
+
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/8.png">
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/9.png">
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/10.png">
+
+</figure>
+</center>
 
 ![](pic/9/8.png)
 ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/9/8.png)
