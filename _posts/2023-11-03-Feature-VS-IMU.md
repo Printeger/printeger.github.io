@@ -160,9 +160,9 @@ mermaid: true
 
 |  | overview | pillar | facade |
 |:-----:|:-----:|:-----:|:-----:|
-| **SCENE 1** | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/17.png) | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/18.png)<br>![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/19.png)<br>![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/20.png) | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/21.png)<br>![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/22.png) |
+| **SCENE 1** | <center><figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/17.png" width="200px" ></figure></center> | <center><figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/18.png" width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/19.png"  width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/20.png"  width="200px" ></figure></center> | <center><figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/21.png" width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/22.png"  width="200px" ></figure></center> |
 |  |  | 地图柱面拟合程度较好 |  |
-| **SCENE 2** | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/23.png) | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/24.png)<br>![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/25.png)<br>![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/26.png)<br>![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/27.png) | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/28.png)<br>![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/29.png)<br>![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/30.png)<br>![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/31.png) |
+| **SCENE 2** | <center><figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/23.png" width="200px" ></figure></center> | <center><figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/24.png" width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/25.png"  width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/26.png"  width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/27.png"  width="200px" ></figure></center> | <center><figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/28.png" width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/29.png"  width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/30.png"  width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/31.png"  width="200px" ></figure></center> |
 |  |  | 近处柱面不贴合，远处贴合程度较好。 |  |
 ### 2.3.2 使用IMU去畸变/IMU位姿叠帧建图
 
@@ -182,3 +182,9 @@ mermaid: true
 
 
 右侧墙面变厚明显。
+
+
+
+
+<center><figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/28.png" width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/29.png"  width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/30.png"  width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/31.png"  width="200px" ></figure></center>
+
