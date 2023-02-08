@@ -262,23 +262,26 @@ LEGO LOAM中把一帧分为6份应该也是分段线性的思想），分段线�
 ### 4.2.2 运动补偿后：
 
 > 使用去畸变后的带有ROI区域的点云进行位姿估计会有抖动，表现在yaw角和水平方向抖动。
+
 ![](pic/8/444.gif)
 ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/444.gif)
 
-![](pic/8/10.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/10.png)
-
-![](pic/8/11.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/11.png)
+<center>
+<figure>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/10.png"  width="300px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/11.png"  width="300px" >
+</figure>
+</center>
 
 > 使用未去畸变的带ROI区域的点云的直接进行位姿估计，使用估计的位姿补偿点云效果正常。
+
 ![](pic/8/555.gif)
 ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/555.gif)
 
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/12.png"  width="250px" >
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/13.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/12.png"  width="300px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/8/13.png"  width="300px" >
 </figure>
 </center>
 
