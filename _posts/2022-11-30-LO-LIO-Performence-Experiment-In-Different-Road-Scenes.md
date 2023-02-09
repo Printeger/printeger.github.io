@@ -78,13 +78,19 @@ mermaid: true
 
 # 5. 城市场景（12.01）
 
-|  | LiDAR ODOM | LIO | 结论 |
-|:-----:|:-----:|:-----:|:-----:|
-| **MAP OVERVIEW** | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/1.png) |![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/2.png) | 1. 纯点云里程计的建图效果优于FAST LIO2建图效果。 |
+|  | MAP OVERVIEW |
+|:-----:|:-----:|
+| **LO** | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/1.png) |
+| **LIO** | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/2.png) |
+| **结论** | 1. 纯点云里程计的建图效果优于FAST LIO2建图效果。 |
 
-|  |  |  |  |  |  |  | 结论 |
-|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| **Trajectory** | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/3.png) |![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/4.png) | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/5.png) | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/6.png) | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/7.png) | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/8.png) | 1. FAST LIO2的轨迹偏离GROUND TRUTH较大。z轴上由于有IMU的约束，没有产生较大漂移<br>2. 纯点云里程计的轨迹xy轴方向精度较高。z轴方向有较大漂移 |
+
+|  | Trajectory | XYZ | RPY |
+|:-----:|:-----:|:-----:|:-----:|
+| **LO** | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/3.png) | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/4.png) | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/5.png) |
+| **LIO** | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/6.png) | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/7.png) | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/8.png) |
+| **结论** | 1. FAST LIO2的轨迹偏离GROUND TRUTH较大。z轴上由于有IMU的约束，没有产生较大漂移| 2. 纯点云里程计的轨迹xy轴方向精度较高。z轴方向有较大漂移 |  |
+
 
 
 
