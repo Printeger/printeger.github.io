@@ -75,6 +75,7 @@ mermaid: true
 
 # 5. 城市场景（12.01）
 ## 5.1 MAP OVERVIEW
+
 |  | MAP OVERVIEW |
 |:-----:|:-----:|
 | **LO** | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/1.png) |
@@ -87,7 +88,7 @@ mermaid: true
 |:-----:|:-----:|:-----:|:-----:|
 | **LO** | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/3.png" width="150px" ></figure> | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/4.png" width="200px" ></figure> | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/5.png" width="250px" ></figure> |
 | **LIO** | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/6.png" width="150px" ></figure> | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/7.png" width="200px" ></figure> | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/8.png" width="250px" ></figure> |
-| **结论** | 1. FAST LIO2的轨迹偏离GROUND TRUTH较大<br>z轴上由于有IMU的约束，没有产生较大漂移| 2. 纯点云里程计的轨迹xy轴方向精度较高<br>z轴方向有较大漂移 | 3. 旋转上LIO效果更佳 |
+| **结论** | 1. LIO轨迹偏离GT较大<br>z轴上由于有IMU的约束，<br>没有产生较大漂移| 2. 纯点云里程计的轨迹xy轴方向精度较高<br>z轴方向有较大漂移 | 3. 旋转上LIO效果更佳 |
 
 ## 5.3 RPE/APE
 
@@ -130,17 +131,17 @@ mermaid: true
 
 # 7. 资源消耗
 
-  FAST LIO：   CPU core：65%
-
-  RES：512 M
-
-  滤波：20ms
-
-  LOAM：CPU core：300%
-
-  RES：500 M
-
-  优化：40 ms
+> FAST LIO：   CPU core：65%
+>
+ > RES：512 M
+>
+>  滤波：20ms
+>
+> LOAM：CPU core：300%
+>
+>  RES：500 M
+>
+>  优化：40 ms
 
 
 
