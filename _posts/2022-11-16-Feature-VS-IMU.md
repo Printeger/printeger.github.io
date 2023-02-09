@@ -1,7 +1,7 @@
 ---
 title: Feature VS IMU
 author: printeger
-date: 2022-11-03 12:00:00 +0800
+date: 2022-11-16 12:00:00 +0800
 categories: [Project, SLAM]
 tags: [LiDAR, SLAM, Experiment]
 math: true
@@ -17,11 +17,15 @@ mermaid: true
 - [2. 里程计全局建图（scan-to-map）](#2-里程计全局建图scan-to-map)
   - [2.1 轨迹：](#21-轨迹)
   - [2.2 量化分析：](#22-量化分析)
-    - [2.2.1 TEST SCENCE 1](#221-test-scence-1)
-    - [2.2.2 TEST SCENCE 2](#222-test-scence-2)
+    - [2.2.1 TEST SCENE 1](#221-test-scene-1)
+    - [2.2.2 TEST SCENE 2](#222-test-scene-2)
   - [2.3 点云展示：](#23-点云展示)
     - [2.3.1 使用里程计位姿去畸变/里程计位姿叠帧建图](#231-使用里程计位姿去畸变里程计位姿叠帧建图)
+      - [SCENE 1](#scene-1)
+      - [SCENE 2](#scene-2)
     - [2.3.2 使用IMU去畸变/IMU位姿叠帧建图](#232-使用imu去畸变imu位姿叠帧建图)
+      - [SCENE 1](#scene-1-1)
+      - [SCENE 2](#scene-2-1)
 
 
 # 0_1. 分析数据：
@@ -135,7 +139,7 @@ mermaid: true
 
 - [x] 高度越高，匹配精度越差。
 
-### 2.2.1 TEST SCENCE 1
+### 2.2.1 TEST SCENE 1
 
 | USING ODOM | USING IMU |
 |:-----:|:-----:|
@@ -145,7 +149,7 @@ mermaid: true
 | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/13.png) | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/14.png) |
 | _ODOM DISTANCE MAP 0～0.5m_ | _IMU DISTANCE MAP 0~0.5m_ |
 
-### 2.2.2 TEST SCENCE 2
+### 2.2.2 TEST SCENE 2
 
 | USING ODOM | USING IMU |
 |:-----:|:-----:|
@@ -158,33 +162,110 @@ mermaid: true
 
 ### 2.3.1 使用里程计位姿去畸变/里程计位姿叠帧建图
 
-|  | overview | pillar | facade |
-|:-----:|:-----:|:-----:|:-----:|
-| **SCENE 1** | <center><figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/17.png" width="200px" ></figure></center> | <center><figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/18.png" width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/19.png"  width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/20.png"  width="200px" ></figure></center> | <center><figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/21.png" width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/22.png"  width="200px" ></figure></center> |
-|  |  | 地图柱面拟合程度较好 |  |
-| **SCENE 2** | <center><figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/23.png" width="200px" ></figure></center> | <center><figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/24.png" width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/25.png"  width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/26.png"  width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/27.png"  width="200px" ></figure></center> | <center><figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/28.png" width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/29.png"  width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/30.png"  width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/31.png"  width="200px" ></figure></center> |
-|  |  | 近处柱面不贴合，远处贴合程度较好。 |  |
+#### SCENE 1
+- [x] overview
+ <center>
+ <figure>
+ <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/17.png" width="200px" >
+ </figure>
+ </center>
+
+- [x] pillar   _地图柱面拟合程度较好_
+ <center>
+ <figure>
+ <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/18.png" width="200px" >
+ <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/19.png"  width="200px" >
+ <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/20.png"  width="200px" >
+ </figure>
+ </center> 
+
+- [x] facade
+ <center>
+ <figure>
+ <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/21.png" width="200px" >
+ <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/22.png"  width="200px" >
+ </figure>
+ </center> 
+
+#### SCENE 2
+- [x] overview
+<center>
+<figure>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/23.png" width="200px" >
+</figure>
+</center> 
+
+- [x] pillar     _近处柱面不贴合，远处贴合程度较好_
+<center>
+<figure>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/24.png" width="200px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/25.png"  width="200px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/26.png"  width="200px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/27.png"  width="200px" >
+</figure>
+</center>
+
+- [x] facade
+<center>
+<figure>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/28.png" width="200px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/29.png"  width="200px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/30.png"  width="200px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/31.png"  width="200px" >
+</figure>
+</center> 
+
 ### 2.3.2 使用IMU去畸变/IMU位姿叠帧建图
 
-|  | overview | pillar | facade |
-|:-----:|:-----:|:-----:|:-----:|
-| **SCENE 1** |  |  |  |
-|  |  |  |  |
-| **SCENE 2** |  |  |  |
-|  |  |  |  |
+#### SCENE 1
+- [x] overview
+ <center>
+ <figure>
+ <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/32.png" width="200px" >
+ <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/33.png" width="200px" >
+ </figure>
+ </center>
 
+- [x] pillar   _灯柱部分点云重合程度差变粗_
+ <center>
+ <figure>
+ <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/34.png" width="200px" >
+ <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/35.png"  width="200px" >
+ <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/36.png"  width="200px" >
+ </figure>
+ </center> 
 
+- [x] facade
+ <center>
+ <figure>
+ <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/37.png" width="200px" >
+ <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/38.png"  width="200px" >
+ </figure>
+ </center> 
 
+#### SCENE 2
+- [x] overview
+<center>
+<figure>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/39.png" width="200px" >
+</figure>
+</center> 
 
-地图柱面拟合程度较好
+- [x] pillar     _近处柱面不贴合，远处贴合程度较好_
+<center>
+<figure>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/40.png" width="200px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/41.png"  width="200px" >
+</figure>
+</center>
 
-灯柱部分点云重合程度差变粗
-
-
-右侧墙面变厚明显。
-
-
-
-
-<center><figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/28.png" width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/29.png"  width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/30.png"  width="200px" ><br><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/31.png"  width="200px" ></figure></center>
+- [x] facade  _右侧墙面变厚明显_
+<center>
+<figure>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/42.png" width="200px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/43.png"  width="200px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/44.png"  width="200px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/10/45.png"  width="200px" >
+</figure>
+</center> 
 
