@@ -87,10 +87,9 @@ mermaid: true
 
 |  | Trajectory | XYZ | RPY |
 |:-----:|:-----:|:-----:|:-----:|
-| **LO** | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/3.png) | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/4.png) | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/5.png) |
-| **LIO** | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/6.png) | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/7.png) | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/8.png) |
+| **LO** | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/3.png" width="200px" ></figure> | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/4.png" width="200px" ></figure> | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/5.png" width="200px" ></figure> |
+| **LIO** | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/6.png" width="200px" ></figure> | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/7.png" width="200px" ></figure> | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/8.png" width="200px" ></figure> |
 | **结论** | 1. FAST LIO2的轨迹偏离GROUND TRUTH较大。z轴上由于有IMU的约束，没有产生较大漂移| 2. 纯点云里程计的轨迹xy轴方向精度较高。z轴方向有较大漂移 |  |
-
 
 
 
