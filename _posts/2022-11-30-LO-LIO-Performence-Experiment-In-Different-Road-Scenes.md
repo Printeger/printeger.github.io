@@ -8,24 +8,20 @@ math: true
 mermaid: true
 ---
 
-- [0\_1. 分析数据：](#0_1-分析数据)
-- [0\_2. 步骤：](#0_2-步骤)
-- [1. 单帧ICP(scan-to-scan)](#1-单帧icpscan-to-scan)
-  - [1.1 位置/姿态变换结果对比](#11-位置姿态变换结果对比)
-  - [1.2 使用不同特征匹配结果：](#12-使用不同特征匹配结果)
-  - [1.3 单帧点云与静止帧中点距分析：](#13-单帧点云与静止帧中点距分析)
-- [2. 里程计全局建图（scan-to-map）](#2-里程计全局建图scan-to-map)
-  - [2.1 轨迹：](#21-轨迹)
-  - [2.2 量化分析：](#22-量化分析)
-    - [2.2.1 TEST SCENCE 1](#221-test-scence-1)
-    - [2.2.2 TEST SCENCE 2](#222-test-scence-2)
-  - [2.3 点云展示：](#23-点云展示)
-    - [2.3.1 使用里程计位姿去畸变/里程计位姿叠帧建图](#231-使用里程计位姿去畸变里程计位姿叠帧建图)
-      - [SCENE 1](#scene-1)
-      - [SCENE 2](#scene-2)
-    - [2.3.2 使用IMU去畸变/IMU位姿叠帧建图](#232-使用imu去畸变imu位姿叠帧建图)
-      - [SCENE 1](#scene-1-1)
-      - [SCENE 2](#scene-2-1)
+- [1. 待测试：](#1-待测试)
+  - [1.1 Lidar 里程计：](#11-lidar-里程计)
+  - [1.2 Lidar-IMU 里程计](#12-lidar-imu-里程计)
+- [2. 测试方法：](#2-测试方法)
+- [3. 测试数据：](#3-测试数据)
+- [4. 隧道场景（11.30）](#4-隧道场景1130)
+- [5. 城市场景（12.01）](#5-城市场景1201)
+  - [5.1 MAP OVERVIEW](#51-map-overview)
+  - [5.2 Trajectory](#52-trajectory)
+  - [5.3 RPE/APE](#53-rpeape)
+- [6. 匝道 + 高架场景（12.02）](#6-匝道--高架场景1202)
+  - [6.1 MAP OVERVIEW](#61-map-overview)
+  - [6.2 Trajectory](#62-trajectory)
+  - [6.3 RPE/APE](#63-rpeape)
 
 # 1. 待测试：
 
@@ -77,19 +73,22 @@ mermaid: true
 <https://printeger.github.io/posts/Tunnel-Mapping/>
 
 # 5. 城市场景（12.01）
-
+## 5.1 MAP OVERVIEW
 |  | MAP OVERVIEW |
 |:-----:|:-----:|
 | **LO** | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/1.png) |
 | **LIO** | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/2.png) |
 | **结论** | 1. 纯点云里程计的建图效果优于FAST LIO2建图效果。 |
 
+## 5.2 Trajectory
 
 |  | Trajectory | XYZ | RPY |
 |:-----:|:-----:|:-----:|:-----:|
 | **LO** | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/3.png" width="150px" ></figure> | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/4.png" width="200px" ></figure> | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/5.png" width="250px" ></figure> |
 | **LIO** | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/6.png" width="150px" ></figure> | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/7.png" width="200px" ></figure> | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/8.png" width="250px" ></figure> |
 | **结论** | 1. FAST LIO2的轨迹偏离GROUND TRUTH较大<br>z轴上由于有IMU的约束，没有产生较大漂移| 2. 纯点云里程计的轨迹xy轴方向精度较高<br>z轴方向有较大漂移 | 3. 旋转上LIO效果更佳 |
+
+## 5.3 RPE/APE
 
 |  | RPE | RPE MAP | APE | APE MAP |
 |:-----:|:-----:|:-----:|:-----:|:-----:|
@@ -101,3 +100,28 @@ mermaid: true
 
 
 # 6. 匝道 + 高架场景（12.02）
+- [ ] 没有IMU信息
+
+## 6.1 MAP OVERVIEW
+
+|  | MAP OVERVIEW |
+|:-----:|:-----:|
+| **LO(有地面约束)** | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/13.png)<br>_白色：惯导叠帧建图；绿色：地面/立面/柱面作为特征建图；红色：立面/柱面作为特征建图_ |
+| **LO(无地面约束)** | ![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/14.png)<br>_俯视图_ |
+| **结论** | 1)纯Lidar里程计的建图z轴漂移较大。<br>2)加入地面约束能够有效约束z轴漂移。<br>3)水平方向上运动较准确。 |
+
+## 6.2 Trajectory
+
+|  | Trajectory | XYZ | RPY |
+|:-----:|:-----:|:-----:|:-----:|
+| **LO(有地面约束)** | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/3.png" width="150px" ></figure> | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/4.png" width="200px" ></figure> | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/5.png" width="250px" ></figure> |
+| **LO(无地面约束)** | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/6.png" width="150px" ></figure> | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/7.png" width="200px" ></figure> | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/8.png" width="250px" ></figure> |
+| **结论** | 1. FAST LIO2的轨迹偏离GROUND TRUTH较大<br>z轴上由于有IMU的约束，没有产生较大漂移| 2. 纯点云里程计的轨迹xy轴方向精度较高<br>z轴方向有较大漂移 | 3. 旋转上LIO效果更佳 |
+
+## 6.3 RPE/APE
+
+|  | RPE | RPE MAP | APE | APE MAP |
+|:-----:|:-----:|:-----:|:-----:|:-----:|
+| **LO(有地面约束)** | RPE:<br>max	0.305850<br>mean	0.066740<br>median  0.055630<br>min	0.002091<br>rmse	0.081193<br>sse	10.732192<br>std	0.046239 | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/9.png" width="200px" ></figure> | APE: <br>max	11.688266<br>mean	7.092213<br>median    7.235089<br>min	0.000000<br>rmse	7.935915<br>sse	102592.372368<br>std	3.560795 | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/10.png" width="200px" ></figure> |
+| **LO(无地面约束)** | RPE：<br>max	0.532363<br>mean	0.070702<br>median  0.064539<br>min	0.001052<br>rmse	0.088508<br>sse	12.721818<br>std	0.053243 | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/11.png" width="200px" ></figure> | APE：<br>max	20.612795<br>mean	10.268830<br>median    10.326422<br>min	0.077964<br>rmse	11.584797<br>sse	218087.226911<br>std	5.362709 | <figure><img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/11/12.png" width="200px" ></figure> |
+| **结论** | 从相对轨迹误差(RPE)分析： | 1）纯雷达里程计的精度略优于改进的FAST LIO2<br>2）两者所估计的帧间相对运动精度在10cm内 | 从绝对轨迹误差(APE)分析： | 1）Lidar里程计的误差主要来源于z轴上的误差；<br>2）LIdar+IMU里程计的误差主要来源于水平方向的位置漂移。 |
