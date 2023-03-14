@@ -72,8 +72,8 @@ Simultaneous Localization and Mapping
 已知输入v和观测y，求最大概率状态：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/4.png"  width="300px" ><br>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/5.png"  width="300px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/4.png"  width="150px" ><br>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/5.png"  width="400px" >
 </figure>
 </center>
 
@@ -314,7 +314,7 @@ EKF的过程基本与KF相同：
 2.使用运动方程得到预测分布:
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/30.png"  width="300px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/30.png"  width="200px" >
 </figure>
 </center>
 
@@ -332,8 +332,8 @@ EKF的过程基本与KF相同：
 对粒子进行重要性重采样（Sample importance resampling）：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/32.png"  width="300px" ><br>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/33.png"  width="500px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/32.png"  width="200px" ><br>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/33.png"  width="600px" >
 </figure>
 </center>
 
@@ -398,7 +398,7 @@ EKF的过程基本与KF相同：
 **Gauss-Newton**
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/40.png"  width="150px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/40.png"  width="100px" >
 </figure>
 </center>
 
@@ -408,7 +408,7 @@ EKF的过程基本与KF相同：
 **L-M**
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/41.png"  width="200px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/41.png"  width="100px" >
 </figure>
 </center>
 
@@ -417,7 +417,7 @@ EKF的过程基本与KF相同：
 
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/42.png"  width="300px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/42.png"  width="700px" >
 </figure>
 </center>
 
@@ -445,12 +445,12 @@ EKF的过程基本与KF相同：
 
 ### 2.1.1 特征提取与关联
 
-LOAM类特征：
+**LOAM类特征**：
 
 根据前后各5个点与当前点的长度(长度指激光点到雷达的距离),计算曲率大小
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/47.png"  width="300px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/47.png"  width="200px" >
 </figure>
 </center>
 
@@ -629,11 +629,11 @@ loam中将特征根据曲率分为四类
 **状态变量真值 = 名义状态变量 + 误差状态变量**
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/62.png"  width="300px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/62.png"  width="200px" >
 </figure>
 </center>
 
-运动方程：连续 ==> 离散
+**运动方程：连续 ==> 离散**
 <center>
 <figure>
 <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/63.png"  width="400px" ><br>
@@ -660,14 +660,14 @@ F为线性化后的雅可比矩阵：
 观测来自GPS，在该应用场景中，我们将观测量(也是一个误差项)定义为先验预测的位置与GPS测量之间的误差。
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/67.png"  width="400px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/67.png"  width="300px" >
 </figure>
 </center>
 
 由于观测方程是线性的，只于位置有关，所以易得H形式为：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/68.png"  width="200px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/68.png"  width="150px" >
 </figure>
 </center>
 
@@ -690,15 +690,15 @@ F为线性化后的雅可比矩阵：
 修正了误差状态的估计。接下来，只需把误差状态归入名义状态，即可。
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/71.png"  width="300px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/71.png"  width="200px" >
 </figure>
 </center>
 
 然后重置ESKF：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/72.png"  width="50px" ><br>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/73.png"  width="100px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/72.png"  width="100px" ><br>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/73.png"  width="200px" >
 </figure>
 </center>
 
@@ -721,7 +721,7 @@ CODE: https://bitbucket.org/naiguixiao/inno_gio/src/master/
 
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/75.png"  width="500px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/75.png"  width="400px" >
 </figure>
 </center>
 
