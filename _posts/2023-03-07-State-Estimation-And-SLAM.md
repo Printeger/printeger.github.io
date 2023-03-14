@@ -1,5 +1,5 @@
 ---
-title: State-Estimation-And-SLAM
+title: State Estimation And SLAM
 author: printeger
 date: 2023-03-07 12:00:00 +0800
 categories: [Project, SLAM]
@@ -16,7 +16,7 @@ Simultaneous Localization and Mapping
 
     SLAM问题的本质就是状态估计。
 
-                                                                                                               --高翔
+                                                                                                                                                                                            --高翔
 
 # 1. 状态估计问题
 
@@ -36,12 +36,12 @@ Simultaneous Localization and Mapping
 
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/1.png"  width="700px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/1.png"  width="1000px" >
 </figure>
 </center>
 
-![](pic/12/1.png)
-![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/1.png)
+<!-- ![](pic/12/1.png)
+![](https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/1.png) -->
 
 ## 1.1 线性高斯系统(Linear Gaussian)
 
@@ -51,14 +51,14 @@ Simultaneous Localization and Mapping
 **运动方程**：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/2.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/2.png"  width="300px" >
 </figure>
 </center>
 
 **观测方程**：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/3.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/3.png"  width="300px" >
 </figure>
 </center>
 
@@ -72,23 +72,23 @@ Simultaneous Localization and Mapping
 已知输入v和观测y，求最大概率状态：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/4.png"  width="250px" >
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/5.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/4.png"  width="300px" ><br>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/5.png"  width="300px" >
 </figure>
 </center>
 
 根据贝叶斯公式：(分母与x无关，舍去，v在x已知的情况下与观测无关，也省略)
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/6.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/6.png"  width="400px" >
 </figure>
 </center>
 
 因式分解，取对数：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/7.png"  width="250px" >
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/8.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/7.png"  width="400px" ><br>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/8.png"  width="300px" >
 </figure>
 </center>
 
@@ -97,21 +97,21 @@ Simultaneous Localization and Mapping
 通常把先验、输入和观测等所有时刻的已知数据放在一个向量z里， z = Hx + W：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/9.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/9.png"  width="500px" >
 </figure>
 </center>
 
 然后可以得到我们更熟悉的目标函数形式：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/10.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/10.png"  width="300px" >
 </figure>
 </center>
 
 求其最小值，只要令自变量导数为零：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/11.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/11.png"  width="300px" >
 </figure>
 </center>
 
@@ -128,7 +128,7 @@ Cholesky分解等…求解**Ax=B**。
 #### 1.1.1.2 贝叶斯推断：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/12.png" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/12.png"  width="1000px" >
 </figure>
 </center>
 
@@ -171,7 +171,7 @@ Cholesky分解等…求解**Ax=B**。
 现实世界中的系统大多是非线性非高斯
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/15.png" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/15.png"  width="300px" >
 </figure>
 </center>
 
@@ -188,7 +188,7 @@ Cholesky分解等…求解**Ax=B**。
 在**批量**估计方法中，使用PDF刻画当前状态有：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/16.png" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/16.png" ><br>
 <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/17.png" >
 </figure>
 </center>
@@ -224,7 +224,7 @@ Cholesky分解等…求解**Ax=B**。
 1）假设状态分布(后验置信度)和噪声为高斯分布；
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/20.png" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/20.png" ><br>
 <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/21.png" >
 </figure>
 </center>
@@ -272,7 +272,7 @@ EKF的过程基本与KF相同：
 > 将线性化点设置为后验均值并不断迭代，将上一次的迭代结果作为下一次的线性化
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/26.png" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/26.png" ><br>
 <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/27.png" >
 </figure>
 </center>
@@ -307,14 +307,14 @@ EKF的过程基本与KF相同：
 1.采样：从先验与运动噪声中采样M个样本：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/29.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/29.png"  width="300px" >
 </figure>
 </center>
 
 2.使用运动方程得到预测分布:
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/30.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/30.png"  width="300px" >
 </figure>
 </center>
 
@@ -324,7 +324,7 @@ EKF的过程基本与KF相同：
 计算每个粒子的权重：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/31.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/31.png"  width="300px" >
 </figure>
 </center>
 
@@ -332,7 +332,7 @@ EKF的过程基本与KF相同：
 对粒子进行重要性重采样（Sample importance resampling）：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/32.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/32.png"  width="300px" ><br>
 <img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/33.png"  width="500px" >
 </figure>
 </center>
@@ -354,7 +354,7 @@ EKF的过程基本与KF相同：
 1）构建运动与观测的误差，
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/35.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/35.png"  width="300px" >
 </figure>
 </center>
 
@@ -362,7 +362,7 @@ EKF的过程基本与KF相同：
 2）优化误差的马氏距离，
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/36.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/36.png"  width="300px" >
 </figure>
 </center>
 
@@ -370,7 +370,7 @@ EKF的过程基本与KF相同：
 3）求解无约束最优化问题
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/37.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/37.png"  width="200px" >
 </figure>
 </center>
 
@@ -378,7 +378,7 @@ EKF的过程基本与KF相同：
 **梯度下降法**
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/38.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/38.png"  width="200px" >
 </figure>
 </center>
 
@@ -398,7 +398,7 @@ EKF的过程基本与KF相同：
 **Gauss-Newton**
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/40.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/40.png"  width="150px" >
 </figure>
 </center>
 
@@ -408,15 +408,16 @@ EKF的过程基本与KF相同：
 **L-M**
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/41.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/41.png"  width="200px" >
 </figure>
 </center>
 
 
 > 加入信赖域概念，解决H矩阵不满秩或非正定情况。
+
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/42.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/42.png"  width="300px" >
 </figure>
 </center>
 
@@ -430,8 +431,8 @@ EKF的过程基本与KF相同：
 误差与目标函数为：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/44.png"  width="250px" >
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/45.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/44.png"  width="300px" ><br>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/45.png"  width="300px" >
 </figure>
 </center>
 
@@ -449,7 +450,7 @@ LOAM类特征：
 根据前后各5个点与当前点的长度(长度指激光点到雷达的距离),计算曲率大小
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/47.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/47.png"  width="300px" >
 </figure>
 </center>
 
@@ -464,7 +465,7 @@ loam中将特征根据曲率分为四类
 假设第k+1帧到第k帧的相对位姿为：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/48.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/48.png"  width="100px" >
 </figure>
 </center>
 
@@ -476,14 +477,14 @@ loam中将特征根据曲率分为四类
 当点p为sharp类型的点时，在上一帧（第k帧）搜索离p'最近的线特征点，并在其相邻的扫描线上再找一个线特征点。
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/49.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/49.png"  width="300px" >
 </figure>
 </center>
 
 用点p'到直线ab的距离构造残差项：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/50.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/50.png"  width="200px" >
 </figure>
 </center>
 
@@ -491,14 +492,14 @@ loam中将特征根据曲率分为四类
 当点为flat类型时，在上一帧（第k帧）搜索离p'最近的面特征点，并在其相邻的扫描线上再找两个面特征点组成平面。
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/51.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/51.png"  width="300px" >
 </figure>
 </center>
 
 用点p到平面mjl的距离构造残差项：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/52.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/52.png"  width="200px" >
 </figure>
 </center>
 
@@ -542,21 +543,21 @@ loam中将特征根据曲率分为四类
 1）第k-1次估计的后验状态及其协方差矩阵：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/54.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/54.png"  width="100px" >
 </figure>
 </center>
 
 2）当前帧的Lidar特征点：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/55.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/55.png"  width="50px" >
 </figure>
 </center>
 
 3）当前帧IMU数据：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/56.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/56.png"  width="100px" >
 </figure>
 </center>
 
@@ -565,28 +566,28 @@ loam中将特征根据曲率分为四类
 1）IMU预积分 ==> 当前时刻状态的先验与其协方差：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/57.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/57.png"  width="50px" >
 </figure>
 </center>
 
 2）运动补偿：使用IMU对Lidar特征进行运动补偿，得到补偿后的特征：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/58.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/58.png"  width="50px" >
 </figure>
 </center>
 
 3）迭代：迭代n次，n=0时，使用先验作为迭代初值。
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/59.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/59.png"  width="500px" >
 </figure>
 </center>
 
 4）计算后验：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/60.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/60.png"  width="100px" >
 </figure>
 </center>
 
@@ -595,7 +596,7 @@ loam中将特征根据曲率分为四类
 第k次的后验均值与协方差矩阵：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/61.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/61.png"  width="50px" >
 </figure>
 </center>
 
@@ -628,29 +629,29 @@ loam中将特征根据曲率分为四类
 **状态变量真值 = 名义状态变量 + 误差状态变量**
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/62.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/62.png"  width="300px" >
 </figure>
 </center>
 
 运动方程：连续 ==> 离散
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/63.png"  width="250px" >
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/64.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/63.png"  width="400px" ><br>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/64.png"  width="500px" >
 </figure>
 </center>
 
 根据上式可以得到线性化后的运动方程的：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/65.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/65.png"  width="150px" >
 </figure>
 </center>
 
 F为线性化后的雅可比矩阵：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/66.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/66.png"  width="400px" >
 </figure>
 </center>
 
@@ -659,28 +660,28 @@ F为线性化后的雅可比矩阵：
 观测来自GPS，在该应用场景中，我们将观测量(也是一个误差项)定义为先验预测的位置与GPS测量之间的误差。
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/67.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/67.png"  width="400px" >
 </figure>
 </center>
 
 由于观测方程是线性的，只于位置有关，所以易得H形式为：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/68.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/68.png"  width="200px" >
 </figure>
 </center>
 
 **更新：**
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/69.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/69.png"  width="200px" >
 </figure>
 </center>
 
 **预测：**
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/70.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/70.png"  width="300px" >
 </figure>
 </center>
 
@@ -689,15 +690,15 @@ F为线性化后的雅可比矩阵：
 修正了误差状态的估计。接下来，只需把误差状态归入名义状态，即可。
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/71.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/71.png"  width="300px" >
 </figure>
 </center>
 
 然后重置ESKF：
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/72.png"  width="250px" >
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/73.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/72.png"  width="50px" ><br>
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/73.png"  width="100px" >
 </figure>
 </center>
 
@@ -709,7 +710,7 @@ CODE: https://bitbucket.org/naiguixiao/inno_gio/src/master/
 [TODO]()
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/74.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/74.png"  width="1500px" >
 </figure>
 </center>
 
@@ -720,7 +721,7 @@ CODE: https://bitbucket.org/naiguixiao/inno_gio/src/master/
 
 <center>
 <figure>
-<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/75.png"  width="250px" >
+<img src="https://github.com/Printeger/printeger.github.io/raw/master/_posts/pic/12/75.png"  width="500px" >
 </figure>
 </center>
 
