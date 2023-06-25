@@ -8,6 +8,8 @@ math: true
 mermaid: true
 ---
 
+> 起因于一次技术分享，也是对之前一段时间学习的总结>_<
+
 # 0. 什么是SLAM？
 
 Simultaneous Localization and Mapping
@@ -16,7 +18,7 @@ Simultaneous Localization and Mapping
 
     SLAM问题的本质就是状态估计。
 
-                                                                                                                                                                                            --高翔
+                                                                                                                                        --高翔
 
 # 1. 状态估计问题
 
