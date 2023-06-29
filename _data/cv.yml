@@ -5,8 +5,8 @@
       value: Albert Einstein
     - name: Date of Birth
       value: 14th August 1997
-    - name: Languages
-      value: English, Chinese
+    - name: Contact
+      value: e-mail: printeger@outlook.com | phone: +86 13151533600
     - name: Research Interests
       value: Robot Perception, SLAM, Autonomous Driving, Robot Learning, UAV Navigation
 
@@ -23,8 +23,8 @@
       year: 2019 - 2022
       description:
         - Naval Architecture and Ocean Engineering
-        contents:
-            - Mainly focus on underwater robot navigation and control in ROV lab.
+      contents:
+        - Mainly focus on underwater robot navigation and control in ROV lab.
 
 - title: Experience
   type: time_table  
@@ -44,6 +44,8 @@
     - title: Engineer of LiDAR Algorithm
       institution: Fulltime in Innovusion, Suzhou, China
       year: Feb 2022 - now
+      description:
+        - Develop multi-sensor fusion Lidar localization and perception algorithms for autonomous driving and road end applications.
 
 - title: Open Source Projects
   type: time_table
