@@ -6,25 +6,35 @@
     - name: Date of Birth
       value: 14th August 1997
     - name: Contact
-      value: 'e-mail: printeger@outlook.com | phone: +86 13151533600'
+      value: 'Email: printeger@outlook.com | Telephone: +86 13151533600'
     - name: Research Interests
       value: Robot Perception, SLAM, Autonomous Driving, Robot Learning, UAV Navigation
 
 - title: Education
   type: time_table
   contents:
-    - title: B.Eng.
-      institution: Nanjing University of Aeronautics and Astronautics, Nanjing, China
-      year: 2015 - 2019
-      description:
-        - Automation
     - title: M.S.
       institution: Harbin Engineering University, Harbin, China
       year: 2019 - 2022
       description:
         - Naval Architecture and Ocean Engineering
-      contents:
-        - Mainly focus on underwater robot navigation and control in ROV lab.
+        - title:  
+          contents:
+            - 'Second year MSci research peoject: First Class'
+            - 'Specialisms: Mainly focus on underwater robot navigation and control in ROV lab.'
+            - 'Thesis title: "Research on Positioning Method of Underwater Robot Based on Multi-sensor Data Fusion" ' 
+
+    - title: B.Eng.
+      institution: Nanjing University of Aeronautics and Astronautics, Nanjing, China
+      year: 2015 - 2019
+      description:
+        - Automation
+        - title:  
+          contents:
+            - 'Four year MSci research peoject: First Class'
+            - 'Specialisms: automatic control theory; Embedded System development; Signal processing; Visual SLAM'
+            - 'Thesis title: "Research on Positioning Method of Underwater Robot Based on Multi-sensor Data Fusion" ' 
+
 
 - title: Experience
   type: time_table  
