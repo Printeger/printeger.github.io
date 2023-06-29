@@ -6,7 +6,7 @@
     - name: Date of Birth
       value: 14th August 1997
     - name: Contact
-      value: e-mail: printeger@outlook.com | phone: +86 13151533600
+      value: 'e-mail: printeger@outlook.com | phone: +86 13151533600'
     - name: Research Interests
       value: Robot Perception, SLAM, Autonomous Driving, Robot Learning, UAV Navigation
 
