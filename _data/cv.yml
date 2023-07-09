@@ -40,7 +40,7 @@
 - title: Experience
   type: time_table  
   contents:
-    - title: Engineer of LiDAR Algorithm
+    - title: Engineer of LiDAR Algorithm and Application
       institution: Fulltime in Innovusion, Suzhou, China
       year: Feb 2022 - now
       description:
@@ -117,22 +117,27 @@
   type: nested_list
   contents:
     - title: <a href="https://github.com/Printeger/MobileGPS2PC">MobileGPS2PC</a>
-      description: Transmit mobile phone GPS to server in Baidu APOLLO module using websocket.
+      items:  
+        - Transmit mobile phone GPS to server in Baidu APOLLO module using websocket.
 
     - title: <a href="https://github.com/Printeger/GIO_ODOM">GIO_ODOM</a>
-      description: GPS IMU Fusion via ESKF in ROS.
+      items: 
+        - GPS IMU Fusion via ESKF in ROS.
 
     - title: <a href="https://github.com/Printeger/">LIGO</a>
-      description: A robust odometry that fused LiDAR, IMU and GPS, which can still work when different sensors join and exit.
+      items: 
+        - A robust odometry that fused LiDAR, IMU and GPS, which can still work when different sensors join and exit.
 
     - title: <a href="https://github.com/Printeger/">LiDAR-IMU Calibration</a>
-      description: LiDAR to IMU calibration using hand-eye method. 
+      items: 
+        - LiDAR to IMU calibration using hand-eye method. 
 
     - title: <a href="https://github.com/Printeger/">LiDAR-IMU Extrinsic refine</a>
-      description: Refine extrinsic of LiDAR to IMU. 
+      - Refine extrinsic of LiDAR to IMU. 
 
     - title: <a href="https://github.com/Printeger/pre_mapping">Highway mapping</a>
-      description: Build LiDAR pointcloud map through RTK and IMU measurements. 
+      items: 
+        - Build LiDAR pointcloud map through RTK and IMU measurements. 
 
 - title: Honors and Awards
   type: time_table
