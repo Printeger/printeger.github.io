@@ -23,6 +23,7 @@
             - 'Second year MSci research peoject: First Class'
             - 'Specialisms: Mainly focus on underwater robot navigation and control in ROV lab.'
             - 'Thesis title: "Research on Positioning Method of Underwater Robot Based on Multi-sensor Data Fusion" ' 
+            - 'Detail: In this paper, a ROV localization method is proposed, which integrates multiple sensors such as camera, sonar and IMU through nonlinear optimization method to adapt to the special underwater environment.' 
 
     - title: B.Eng.
       institution: Nanjing University of Aeronautics and Astronautics, Nanjing, China
@@ -39,41 +40,66 @@
 - title: Experience
   type: time_table  
   contents:
-    - title: Pratical project of bionic UAV
-      institution: Internship in Shenzhen DAMODA Intelligent Control Technology Company, Nanjing, China
-      year: Sep 2017 - Jan 2018
-      description:
-        - Use Solidworks to design bionic butterfly ornithopteric aircraft. Write control program, make and test the prototype.
-    
-    - title: ROV localization using SBS(Short Baseline Sonar)
-      institution: Internship in Feimabin (Qingdao) Intelligent Technology Co., Ltd., Qingdao, China
-      year: Jun 2021 - Aug 2021
-      description:
-        - Responsible for the design of the positioning scheme of the ship cleaning robot, and code implementation.
-
     - title: Engineer of LiDAR Algorithm
       institution: Fulltime in Innovusion, Suzhou, China
       year: Feb 2022 - now
       description:
         - Develop multi-sensor fusion Lidar localization and perception algorithms for autonomous driving and road end applications.
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: ROV localization using SBS(Short Baseline Sonar)
+      institution: Internship in Feimabin (Qingdao) Intelligent Technology Co., Ltd., Qingdao, China
+      year: Jun 2021 - Aug 2021
+      description:
+        - Responsible for the design of the positioning scheme of the ship cleaning robot, and code implementation.
 
-- title: Honors and Awards
-  type: time_table
+    - title: ROV sea trial for coral protection in Sourth China Sea 
+      institution: Harbin Engineering University underwater robot lab,
+      year: Mar 2021 - May 2021
+      description:
+        - In charge of the ROV control system design and to maintain and test. This experiment was designed to test the effect of using ROV to clean up acanthaster planci flooding in shallow waters, which feeds mainly on coral.
+    
+    - title: Pratical project of bionic UAV
+      institution: Internship in Shenzhen DAMODA Intelligent Control Technology Company, Nanjing, China
+      year: Sep 2017 - Jan 2018
+      description:
+        - Use Solidworks to design bionic butterfly ornithopteric aircraft. Write control program, make and test the prototype.
+    
+    - title: Human gesture recognition and 3D modeling
+      institution: A campus science and innovation project
+      year: Jul 2018 - Oct 2018
+      description:
+        - Using STM32 and six-axis inertial sensors make a wearable glove, which could colect the movement of human hand. Based on these information, Unity3D was used to build 3D models for visualization.
+
+    - title: Motion-sensing game design based on FPGA
+      institution: A campus FPGA Design Competition
+      year: Apr 2018 - Jun 2018
+      description:
+        - A Flappy Bird like game using FPGA, sound transducer was used to control character's movement.
+
+    - title: Internship in AVIC Jiangxi Hongdu Aviation Industry Group Company.
+      institution: AVIC Jiangxi Hongdu Aviation Industry, Nanchang, China
+      year: Jul 2017 - Aug 2017
+      description:
+        - 
+
+- title: Skills & Interests
+  type: nested_list
   contents:
-    - year: 1921
+    - title: '<b>Skills:</b> Robotic Related'
       items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+        - My interest in robot throughout my school life.
+        - <b>:</b>.
+    - title: '<b>Skills:</b> Computer Science'
+      items:
+        - Description 1.
+        - Description 2.
+
+    - title: '<b>Skills:</b> Computer Science'
+      items:
+        - Description 1.
+        - Description 2.
+
+
 
 - title: Academic Interests
   type: nested_list
@@ -87,7 +113,39 @@
         - Description 1.
         - Description 2.
 
-- title: Other Interests
+- title: Open Source Projects
+  type: nested_list
+  contents:
+    - title: <a href="https://github.com/Printeger/MobileGPS2PC">MobileGPS2PC</a>
+      description: Transmit mobile phone GPS to server in Baidu APOLLO module using websocket.
+
+    - title: <a href="https://github.com/Printeger/GIO_ODOM">GIO_ODOM</a>
+      description: GPS IMU Fusion via ESKF in ROS.
+
+    - title: <a href="https://github.com/Printeger/">LIGO</a>
+      description: A robust odometry that fused LiDAR, IMU and GPS, which can still work when different sensors join and exit.
+
+    - title: <a href="https://github.com/Printeger/">LiDAR-IMU Calibration</a>
+      description: LiDAR to IMU calibration using hand-eye method. 
+
+    - title: <a href="https://github.com/Printeger/">LiDAR-IMU Extrinsic refine</a>
+      description: Refine extrinsic of LiDAR to IMU. 
+
+    - title: <a href="https://github.com/Printeger/pre_mapping">Highway mapping</a>
+      description: Build LiDAR pointcloud map through RTK and IMU measurements. 
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 1921
+      items: 
+        - Nobel Prize in Physics 
+        - Matteucci Medal
+    - year: 2029
+      items: 
+        - Max Planck Medal
+
+- title: Skills & Interests
   type: list
   contents:
     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
