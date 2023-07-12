@@ -85,7 +85,7 @@
 - title: Skills & Interests
   type: nested_list
   contents:
-    - title: '<u>Skills:</u> Robotics Related'
+    - title: '<u>Skills: Robotics Related</u>'
       items: 
         - 'My interest in robotics throughout my studies, and my knowledge of the field, has led me to develop skills in the following areas:'
         - '<b>Design and simulation of robot structure: </b>.'
@@ -96,7 +96,7 @@
         - '<b>LiDAR data processing and application: </b>.'
         - '<b>SLAM & mulit-sensor fusion: </b>.'
 
-    - title: '<u>Skills:</u> Data Analysis and Computing'
+    - title: '<u>Skills: Data Analysis and Computing</u>'
       items:
         - 'During years of study, work and practice, the following computing abilities have been developed: '
         - '<b>C/C++ for development: </b>.'
@@ -104,7 +104,7 @@
         - '<b>Use MATLAB to process data: </b>.'
         - '<b>Use git to manage projects and collaborate with others: </b>.'
 
-    - title: '<u>Skills: Reading and Communication</u> '
+    - title: '<u>Skills: Reading and Communication</u>'
       items:
         - '<b>Keep reading papers: </b>.'
         - '<b>Collaborate and communicate with people from different backgrounds: </b>.'
@@ -148,31 +148,31 @@
 #       items: 
 #         - Max Planck Medal
 
-- title: Academic Interests
-  type: nested_listdevelopment
-  contents:
-    - title: Robotics related
-      items: 
-        - A robust and fast SLAM algorithm can be adapted to various challenging scenarios.
-        - How to enhance the perception of computer through various sensors.
-        - How to integrate new technologies and knowledge from different fields into robotics, deep learning etc.
-        - How to make robots more intelligent and more human-like.
-        - Map reuse and update in dynamic environment.
-        - Go deeper into the robot localization method & do something challenging and interesting. 
-    - title: AR/VR/MR.
-      items:
-        - Use sensor fusion and SLAM to improve this new method for human and computer interaction.
-        - Any novel researchs and applications.
+# - title: Academic Interests
+#   type: nested_listdevelopment
+#   contents:
+#     - title: Robotics related
+#       items: 
+#         - A robust and fast SLAM algorithm can be adapted to various challenging scenarios.
+#         - How to enhance the perception of computer through various sensors.
+#         - How to integrate new technologies and knowledge from different fields into robotics, deep learning etc.
+#         - How to make robots more intelligent and more human-like.
+#         - Map reuse and update in dynamic environment.
+#         - Go deeper into the robot localization method & do something challenging and interesting. 
+#     - title: AR/VR/MR.
+#       items:
+#         - Use sensor fusion and SLAM to improve this new method for human and computer interaction.
+#         - Any novel researchs and applications.
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> football, cycling, reading, play electric guitar(still amateur:P)
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> football, cycling, reading, play electric guitar(still amateur:P)
 
-- title: Some Questions you might want to ask...
-  type: list
-  contents:
-    - '<b>Q1: </b><u>Why do I want to be a PhD?</u>'
-    - '<b>Q2: </b><u>Why do I think I'm qualified for a PhD?</u>'
-    - '<b>Q3: </b><u>What is my expectation for the PhD?</u>'
-    - '<b>Q4: </b><u>What do you want to do in the future?</u>'
+# - title: Some Questions you might want to ask...
+#   type: list
+#   contents:
+#     - '<b>Q1: </b><u>Why do I want to be a PhD?</u>'
+#     - '<b>Q2: </b><u>Why do I think I'm qualified for a PhD?</u>'
+#     - '<b>Q3: </b><u>What is my expectation for the PhD?</u>'
+#     - '<b>Q4: </b><u>What do you want to do in the future?</u>'
