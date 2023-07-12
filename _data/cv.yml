@@ -172,7 +172,8 @@
 - title: Some Questions you might want to ask...
   type: list
   contents:
-    - '<b>Q1: </b><u>Why do I want to be a PhD?</u>'
-    - '<b>Q2: </b><u>Why do I think I'm qualified for a PhD?</u>'
-    - '<b>Q3: </b><u>What is my expectation for the PhD?</u>'
-    - '<b>Q4: </b><u>What do you want to do in the future?</u>'
+    items:
+      - '<b>Q1: </b><u>Why do I want to be a PhD?</u>'
+      - '<b>Q2: </b><u>Why do I think I'm qualified for a PhD?</u>'
+      - '<b>Q3: </b><u>What is my expectation for the PhD?</u>'
+      - '<b>Q4: </b><u>What do you want to do in the future?</u>'
