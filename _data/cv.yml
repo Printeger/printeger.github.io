@@ -85,7 +85,7 @@
 - title: Skills & Interests
   type: nested_list
   contents:
-    - title: '<u>Skills: Robotics Related</u>'
+    - title: 'Skills: Robotics Related'
       items: 
         - 'My interest in robotics throughout my studies, and my knowledge of the field, has led me to develop skills in the following areas:'
     #     - '<b>Design and simulation of robot structure: </b>.'
