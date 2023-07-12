@@ -88,28 +88,28 @@
     - title: '<u>Skills: Robotics Related</u>'
       items: 
         - 'My interest in robotics throughout my studies, and my knowledge of the field, has led me to develop skills in the following areas:'
-        - '<b>Design and simulation of robot structure: </b>.'
-        - '<b>Embedded circuit design and programming: </b>.'
-        - '<b>Control theory: </b>.'
-        - '<b>Design and execution of prototype experiments: </b>.'
-        - '<b>Multi-platform development: </b>.'
-        - '<b>LiDAR data processing and application: </b>.'
-        - '<b>SLAM & mulit-sensor fusion: </b>.'
+    #     - '<b>Design and simulation of robot structure: </b>.'
+    #     - '<b>Embedded circuit design and programming: </b>.'
+    #     - '<b>Control theory: </b>.'
+    #     - '<b>Design and execution of prototype experiments: </b>.'
+    #     - '<b>Multi-platform development: </b>.'
+    #     - '<b>LiDAR data processing and application: </b>.'
+    #     - '<b>SLAM & mulit-sensor fusion: </b>.'
 
-    - title: '<u>Skills: Data Analysis and Computing</u>'
-      items:
-        - 'During years of study, work and practice, the following computing abilities have been developed: '
-        - '<b>C/C++ for development: </b>.'
-        - '<b>Python for data processing: </b>.'
-        - '<b>Use MATLAB to process data: </b>.'
-        - '<b>Use git to manage projects and collaborate with others: </b>.'
+    # - title: '<u>Skills: Data Analysis and Computing</u>'
+    #   items:
+    #     - 'During years of study, work and practice, the following computing abilities have been developed: '
+    #     - '<b>C/C++ for development: </b>.'
+    #     - '<b>Python for data processing: </b>.'
+    #     - '<b>Use MATLAB to process data: </b>.'
+    #     - '<b>Use git to manage projects and collaborate with others: </b>.'
 
-    - title: '<u>Skills: Reading and Communication</u>'
-      items:
-        - '<b>Keep reading papers: </b>.'
-        - '<b>Collaborate and communicate with people from different backgrounds: </b>.'
-        - '<b>Language competence: </b>.'
-        - '<b>: </b>.'
+    # - title: '<u>Skills: Reading and Communication</u>'
+    #   items:
+    #     - '<b>Keep reading papers: </b>.'
+    #     - '<b>Collaborate and communicate with people from different backgrounds: </b>.'
+    #     - '<b>Language competence: </b>.'
+    #     - '<b>: </b>.'
 
 - title: Open Source Projects
   type: nested_list
