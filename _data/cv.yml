@@ -149,7 +149,7 @@
         - Max Planck Medal
 
 - title: Academic Interests
-  type: nested_listdevelopment
+  type: nested_list
   contents:
     - title: Robotics related
       items: 
@@ -169,7 +169,7 @@
   contents:
     - <u>Hobbies:</u> football, cycling, reading, play electric guitar(still amateur:P)
 
-- title: Some Questions you might want to ask...
+- title: Some Questions You Might Want to Ask...
   type: nested_list
   contents:
     - title: '<b>Q1: </b><u>Why do I want to be a PhD?</u>'
