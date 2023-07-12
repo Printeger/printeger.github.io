@@ -82,7 +82,7 @@
       description:
         - 
 
-- title: Skills & Interests
+- title: Skills
   type: nested_list
   contents:
     - title: '<u>Skills: Robotics Related</u>'
