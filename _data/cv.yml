@@ -170,10 +170,17 @@
     - <u>Hobbies:</u> football, cycling, reading, play electric guitar(still amateur:P)
 
 - title: Some Questions you might want to ask...
-  type: list
+  type: nested_list
   contents:
-    items:
-      - '<b>Q1: </b><u>Why do I want to be a PhD?</u>'
-      - '<b>Q2: </b><u>Why do I think I'm qualified for a PhD?</u>'
-      - '<b>Q3: </b><u>What is my expectation for the PhD?</u>'
-      - '<b>Q4: </b><u>What do you want to do in the future?</u>'
+    - title: '<b>Q1: </b><u>Why do I want to be a PhD?</u>'
+      items: 
+        - '<b>A1: </b>'
+    - title: '<b>Q2: </b><u>Why do I think I'm qualified for a PhD?</u>'
+      items: 
+        - '<b>A2: </b>'
+    - title: '<b>Q3: </b><u>What is my expectation for the PhD?</u>'
+      items: 
+        - '<b>A3: </b>'
+    - title: '<b>Q4: </b><u>What do you want to do in the future?</u>'
+      items: 
+        - '<b>A4: </b>'
