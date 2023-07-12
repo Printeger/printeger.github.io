@@ -34,7 +34,7 @@
           contents:
             - 'Four year MSci research peoject: First Class'
             - 'Specialisms: automatic control theory; Embedded System development; Signal processing; Visual SLAM'
-            - 'Thesis title: "Research on Positioning Method of Underwater Robot Based on Multi-sensor Data Fusion" ' 
+            - 'Thesis title: "Research on Positioning Method of Underwater Robot Based on Multi-sensor Data Fusion"' 
 
 
 - title: Experience
@@ -137,16 +137,16 @@
       items: 
         - Build LiDAR pointcloud map through RTK and IMU measurements. 
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+# - title: Honors and Awards
+#   type: time_table
+#   contents:
+#       year: 1921
+#       items: 
+#         - Nobel Prize in Physics 
+#         - Matteucci Medal
+#       year: 2029
+#       items: 
+#         - Max Planck Medal
 
 - title: Academic Interests
   type: nested_listdevelopment
