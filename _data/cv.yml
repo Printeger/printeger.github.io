@@ -84,16 +84,17 @@
 - title: Skills
   type: nested_list
   contents:
-    # - title: '<u>Skills: Robotics Related</u>'
-    #   items:
-    #     - 'My interest in robotics throughout my studies, and my knowledge of the field, has led me to develop skills in the following areas:'
-    #     - '<b>Design and modeling of robot structure:</b> in development of bionic aircraft, CAD & Solidworks was used to design the prototype.'
-    #     - '<b>PCB design and embedded circuit programming:</b> using STM32 series chips to develop control program in ROV and other project; also have FPGA development experience.'
-    #     - '<b>Control theory:</b> systematically studied in university, and used in many projects.'
-    #     - '<b>Design and execution of prototype experiments:</b> over two years experience working cooperatively in ROV laboratory; self-motivated and tough enough to endure poor experimental environment.'
-    #     - '<b>Multi-platform development:</b> develop on ROS and Baidu APOLLO.'
-    #     - '<b>LiDAR data processing and application:</b> handling LiDAR data in various methods, including registration, motion compentation, cluster, .'
-    #     - '<b>SLAM & mulit-sensor fusion:</b> start with visual SLAM; and then explored the fusion of vision, sonar and IMU on underwater robot for application in underwater scenes(in my master's studies); also have experience in LiDAR odometry, LiDAR-IMU odometry and GPS-IMU fusion for autonomous driving(at work).'
+    - title: '<u>Skills: Robotics Related</u>'
+      items:
+        - 'During years of study, work and practice, the following computing abilities have been developed: '
+        - 'My interest in robotics throughout my studies, and my knowledge of the field, has led me to develop skills in the following areas: '
+        - '<b>Design and modeling of robot structure:</b> in development of bionic aircraft, CAD & Solidworks was used to design the prototype.'
+        - '<b>PCB design and embedded circuit programming:</b> using STM32 series chips to develop control program in ROV and other project; also have FPGA development experience.'
+        - '<b>Control theory:</b> systematically studied in university, and used in many projects.'
+        - '<b>Design and execution of prototype experiments:</b> over two years experience working cooperatively in ROV laboratory; self-motivated and tough enough to endure poor experimental environment.'
+        - '<b>Multi-platform development:</b> develop on ROS and Baidu APOLLO.'
+        - '<b>LiDAR data processing and application:</b> handling LiDAR data in various methods, including registration, motion compentation, cluster, .'
+        - '<b>SLAM & mulit-sensor fusion:</b> start with visual SLAM; and then explored the fusion of vision, sonar and IMU on underwater robot for application in underwater scenes(in my master's studies); also have experience in LiDAR odometry, LiDAR-IMU odometry and GPS-IMU fusion for autonomous driving(at work).'
 
     - title: '<u>Skills: Data Analysis and Computing</u>'
       items:
