@@ -85,7 +85,7 @@
   type: nested_list
   contents:
     - title: '<u>Skills: Robotics Related</u>'
-      items: 
+      items:
         - 'My interest in robotics throughout my studies, and my knowledge of the field, has led me to develop skills in the following areas:'
         - '<b>Design and modeling of robot structure:</b> in development of bionic aircraft, CAD & Solidworks was used to design the prototype.'
         - '<b>PCB design and embedded circuit programming:</b> using STM32 series chips to develop control program in ROV and other project; also have FPGA development experience.'
