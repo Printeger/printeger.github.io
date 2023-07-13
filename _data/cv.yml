@@ -36,7 +36,6 @@
             - 'Specialisms: automatic control theory; Embedded System development; Signal processing; Visual SLAM'
             - 'Thesis title: "Research on Positioning Method of Underwater Robot Based on Multi-sensor Data Fusion"' 
 
-
 - title: Experience
   type: time_table  
   contents:
@@ -88,27 +87,27 @@
     - title: '<u>Skills: Robotics Related</u>'
       items: 
         - 'My interest in robotics throughout my studies, and my knowledge of the field, has led me to develop skills in the following areas:'
-        - '<b>Design and simulation of robot structure: </b>.'
-        - '<b>Embedded circuit design and programming: </b>.'
-        - '<b>Control theory: </b>.'
-        - '<b>Design and execution of prototype experiments: </b>.'
-        - '<b>Multi-platform development: </b>.'
-        - '<b>LiDAR data processing and application: </b>.'
-        - '<b>SLAM & mulit-sensor fusion: </b>.'
+        - '<b>Design and modeling of robot structure:</b> in development of bionic aircraft, CAD & Solidworks was used to design the prototype.'
+        - '<b>PCB design and embedded circuit programming:</b> using STM32 series chips to develop control program in ROV and other project; also have FPGA development experience.'
+        - '<b>Control theory:</b> systematically studied in university, and used in many projects.'
+        - '<b>Design and execution of prototype experiments:</b> over two years experience working cooperatively in ROV laboratory; self-motivated and tough enough to endure poor experimental environment.'
+        - '<b>Multi-platform development:</b> develop on ROS and Baidu APOLLO.'
+        - '<b>LiDAR data processing and application:</b> handling LiDAR data in various methods, including registration, motion compentation, cluster, .'
+        - '<b>SLAM & mulit-sensor fusion:</b> start with visual SLAM; and then explored the fusion of vision, sonar and IMU on underwater robot for application in underwater scenes(in my master's studies); also have experience in LiDAR odometry, LiDAR-IMU odometry and GPS-IMU fusion for autonomous driving(at work).'
 
     - title: '<u>Skills: Data Analysis and Computing</u>'
       items:
         - 'During years of study, work and practice, the following computing abilities have been developed: '
-        - '<b>C/C++ for development: </b>.'
-        - '<b>Python for data processing: </b>.'
-        - '<b>Use MATLAB to process data: </b>.'
-        - '<b>Use git to manage projects and collaborate with others: </b>.'
+        - '<b>C/C++ for development:</b> is my primary programming language, familiar with tools and utilities available in C++(CMake, Bazel, etc.)'
+        - '<b>Python for data processing:</b> use python as an efficient tool for processing data and previewing new ideas; in a period of time, tried to use neural network for pointcloud classification.'
+        - '<b>Use MATLAB to process data:</b> used for control system simulation in some projects during undergraduate years.'
+        - '<b>Use git to manage projects and collaborate with others:</b> proficient in git management of project code with team.'
 
     - title: '<u>Skills: Reading and Communication</u>'
       items:
-        - '<b>Keep reading papers: </b>.'
-        - '<b>Collaborate and communicate with people from different backgrounds: </b>.'
-        - '<b>Language competence: </b>.'
+        - '<b>Keep reading papers:</b> this is where I get new knowledge and keep up with trends.'
+        - '<b>Collaborate and communicate with people from different backgrounds:</b> shared workspace, materials, and knowledge.'
+        - '<b>Language competence:</b> proficient in English for communication, presentation and reading.'
 
 - title: Open Source Projects
   type: nested_list
@@ -137,32 +136,31 @@
       items: 
         - Build LiDAR pointcloud map through RTK and IMU measurements. 
 
-- title: Honors and Awards
-  type: time_table
+- title: Grants and Awards
+  type: list
   contents:
-      year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-      year: 2029
-      items: 
-        - Max Planck Medal
+    - 2x academic scholarships in HEU
+    - 1x academic scholarship in NUAA
+    - Second Prize in Anlu Cup FPGA Competition
+    - Third prize of Aircraft Design Competition
+    - Outstanding Student Certificate of Visual SLAM Course of Deep Blue Institute(Online course)
+    - 3x Runner-up of the Intercollegiate Cup Football Competition in 15/16, 16/17 and 17/18 academic year(it's awful:('
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Robotics related
+    - title: <u>Robotics related</u>
       items: 
-        - A robust and fast SLAM algorithm can be adapted to various challenging scenarios.
-        - How to enhance the perception of computer through various sensors.
-        - How to integrate new technologies and knowledge from different fields into robotics, deep learning etc.
-        - How to make robots more intelligent and more human-like.
-        - Map reuse and update in dynamic environment.
-        - Go deeper into the robot localization method & do something challenging and interesting. 
-    - title: AR/VR/MR.
+        - 1. A robust and fast SLAM algorithm can be adapted to various challenging scenarios.
+        - 2. How to enhance the perception of computer through various sensors.
+        - 3. How to integrate new technologies and knowledge from different fields into robotics, deep learning etc.
+        - 4. How to make robots more intelligent and more human-like.
+        - 5. Map reuse and update in dynamic environment.
+        - 6. Go deeper into the robot localization method & do something challenging and interesting. 
+    - title: <u>AR/VR/MR</u>
       items:
-        - Use sensor fusion and SLAM to improve this new method for human and computer interaction.
-        - Any novel researchs and applications.
+        - 1. Use sensor fusion and SLAM to improve this new method for human and computer interaction.
+        - 2. Any novel researchs and applications.
 
 - title: Other Interests
   type: list
