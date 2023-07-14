@@ -87,13 +87,13 @@
     - title: '<u>Skills: Robotics Related</u>'
       items:
         - 'My interest in robotics throughout my studies, and my knowledge of the field, has led me to develop skills in the following areas: '
-        - '<b>Design and modeling of robot structure:</b> in development of bionic aircraft, CAD & Solidworks was used to design the prototype.'
-        - '<b>PCB design and embedded circuit programming:</b> using STM32 series chips to develop control program in ROV and other project; also have FPGA development experience.'
-        - '<b>Control theory:</b> systematically studied in university, and used in many projects.'
-        - '<b>Design and execution of prototype experiments:</b> over two years experience working cooperatively in ROV laboratory; self-motivated and tough enough to endure poor experimental environment.'
-        - '<b>Multi-platform development:</b> develop on ROS and Baidu APOLLO.'
-        - '<b>LiDAR data processing and application:</b> handling LiDAR data in various methods, including registration, motion compentation, cluster, .'
         - '<b>SLAM & mulit-sensor fusion:</b> start with visual SLAM; and then explored the fusion of vision, sonar and IMU on underwater robot for application in underwater scenes(in my master`s studies); also have experience in LiDAR odometry, LiDAR-IMU odometry and GPS-IMU fusion for autonomous driving(at work).'
+        - '<b>LiDAR data processing and application:</b> handling LiDAR data in various methods, including registration, motion compentation, cluster, etc.'
+        - '<b>Control theory:</b> systematically studied in university, and used in many projects.'
+        - '<b>Multi-platform development:</b> develop on ROS and Baidu APOLLO.'
+        - '<b>Design and execution of prototype experiments:</b> over two years experience working cooperatively in ROV laboratory; self-motivated and tough enough to endure poor experimental environment.'
+        - '<b>PCB design and embedded circuit programming:</b> using STM32 series chips to develop control program in ROV and other project; also have FPGA development experience.'
+        - '<b>Design and modeling of robot structure:</b> in development of bionic aircraft, CAD & Solidworks was used to design the prototype.'
 
     - title: '<u>Skills: Data Analysis and Computing</u>'
       items:
@@ -144,7 +144,7 @@
     - Second Prize in Anlu Cup FPGA Competition
     - Third prize of Aircraft Design Competition
     - Outstanding Student Certificate of Visual SLAM Course of Deep Blue Institute(Online course)
-    - 3x Runner-up of the Intercollegiate Cup Football Competition in 15/16, 16/17 and 17/18 academic year(it's awful:('
+    - 3x Runner-up of the Intercollegiate Cup Football Competition in 15/16, 16/17 and 17/18 academic year:('
 
 - title: Academic Interests
   type: nested_list
@@ -160,7 +160,7 @@
     - title: <u>AR/VR/MR</u>
       items:
         - 1. Use sensor fusion and SLAM to improve this new method for human and computer interaction.
-        - 2. Any novel researchs and applications.
+        - 2. Any novel research and applications.
 
 - title: Other Interests
   type: list
