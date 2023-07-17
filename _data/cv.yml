@@ -153,12 +153,11 @@
       items: 
         - 1. Real-time and Large-scale SLAM. I find that there is a great demand in real application scenarios.
         - 2. SLAM in Dynamic Environments. I have encountered such a problem at work, we came up with a redundant solution, but I didn't like it.
-        - 2. Map reuse and update in dynamic environment.
-        How to enhance the perception of computer through various sensors.
-        - 3. Deep Learning for SLAM. Since deep learning techniques have shown great potential in various tasks. How will he applied in SLAM is exciting. 
-        - 4. Semantic related. It is important for robots or autonomous systems to have a richer understanding of environment. 
-        - 5. Collaborative SLAM. Multiple robots or UAVs working together to build a shared map of the environment is a promising approach to solve the localization problem in large-scale environments.
-        - 6. Go deeper into the robot localization method & do something challenging and interesting. 
+        - 3. Map reuse and update in dynamic environment.
+        - 4. Deep Learning for SLAM. Since deep learning techniques have shown great potential in various tasks. How will he applied in SLAM is exciting. 
+        - 5. Semantic related. It is important for robots or autonomous systems to have a richer understanding of environment. 
+        - 6. Collaborative SLAM. Multiple robots or UAVs working together to build a shared map of the environment is a promising approach to solve the localization problem in large-scale environments.
+        - 7. Go deeper into the robot localization method & do something challenging and interesting. 
     - title: <u>AR/VR/MR</u>
       items:
         - 1. Use sensor fusion and SLAM to improve this new method for human and computer interaction.
