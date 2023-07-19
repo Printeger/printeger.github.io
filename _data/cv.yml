@@ -43,7 +43,11 @@
       institution: Fulltime in Innovusion, Suzhou, China
       year: Feb 2022 - now
       description:
-        - Develop multi-sensor fusion Lidar localization and perception algorithms for autonomous driving and road end applications.
+        - '<b>LiDAR-based localization algorithm:</b> Develop multi-sensor fusion LiDAR localization algorithm based on optimization and Kalman filter for autonomous driving and road end applications.'
+        - '<b>LiDAR-IMU calibration:</b> Develop LiDAR-IMU calibration algorithm based on hand-eye calibration method.'
+        - '<b>low cost GPS and IMU fusion localization method:</b> Develop GPS-IMU fusion localization algorithm using ESKF(second version is implemented with the IKFoM lib). GPS measurement come from cell phones using websocket.'
+        - '<b>Highway mapping:</b> Build pointcloud map of highway.'
+        - '<b>3D Pointcloud Classification:</b> Develop 3D Pointcloud Classification Network.'
 
     - title: ROV localization using SBS(Short Baseline Sonar)
       institution: Internship in Feimabin (Qingdao) Intelligent Technology Co., Ltd., Qingdao, China
